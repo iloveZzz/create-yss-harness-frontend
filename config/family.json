@@ -1,0 +1,8 @@
+{
+  "side": "frontend",
+  "packageName": "create-yss-harness-frontend",
+  "profileId": "harness.frontend-delivery",
+  "metadataFile": ".yss-harness-frontend.json",
+  "templateName": "yss-harness-frontend-agent",
+  "templateSource": "github:iloveZzz/yss-harness-frontend-agent"
+}

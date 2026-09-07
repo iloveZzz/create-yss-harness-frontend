@@ -1,0 +1,271 @@
+schema_version: 1
+contract_id: harness-frontend-contract-v1
+status: active
+owner: role.harness-orchestrator
+target_scope: frontend-delivery
+orchestrator: role.harness-orchestrator
+roles:
+- role.architecture-agent
+- role.frontend-agent
+- role.test-agent
+states:
+- draft
+- ready-for-review
+- approved
+- ready-for-agent
+- in-progress
+- verification
+- verified
+- completed
+- blocked
+- stale
+- drift
+- new_impacts
+execution_states:
+- Explorer
+- Drafter
+- Worker
+- Reviewer
+- Verifier
+entry:
+  required:
+  - yss-project.yaml
+  - CONTEXT.md
+  - approved-upstream-inputs
+  - verified-strategy-and-backend-delivery
+  rejected:
+  - missing-context
+  - invalid-repository-mode
+  - stale-upstream-input
+tactical_design:
+  required_for_impacts:
+  - domain_behavior
+  - aggregate
+  - invariant
+  - state_machine
+  - consistency
+  - domain_event
+  - gateway_boundary
+  - persistence_mapping
+  no_impact: not-applicable-with-reason; new backend domain impact returned upstream
+  owner: role.architecture-agent
+  review_by: role.test-agent
+slice_contract:
+  id: slice-implementation-contract-v2
+  one_contract_per_slice: true
+  shared_version_required: true
+  resolution_digest_required: true
+  required_sections:
+  - architecture
+  - frontend
+  - backend
+  - testing
+work_unit_routes:
+  work-unit.harness-entry:
+    primary_skill: harness-orchestrator
+    supporting_skills:
+    - implementation-repo-onboarding
+    - research
+    skills:
+    - harness-orchestrator
+    - implementation-repo-onboarding
+    - research
+    applies_when: harness_entry
+    not_applicable_reason: harness_context_already_verified
+  work-unit.tactical-design:
+    primary_skill: architecture-agent
+    supporting_skills:
+    - yss-tactical-design
+    - domain-modeling
+    - codebase-design
+    - research
+    - tdd
+    skills:
+    - architecture-agent
+    - yss-tactical-design
+    - domain-modeling
+    - codebase-design
+    - research
+    - tdd
+    applies_when: legacy-reference-only-not-in-frontend-profile
+    not_applicable_reason: no_domain_behavior_or_tactical_design_impact
+  work-unit.slice-contract:
+    primary_skill: harness-orchestrator
+    supporting_skills:
+    - architecture-agent
+    - yss-implementation-contract-compiler
+    - implementation-repo-onboarding
+    skills:
+    - harness-orchestrator
+    - architecture-agent
+    - yss-implementation-contract-compiler
+    - implementation-repo-onboarding
+    applies_when: joint_inputs_current_and_frontend_plan_prepared
+    not_applicable_reason: required_upstream_contract_not_current
+  work-unit.slice-implementation:
+    primary_skill: frontend-agent
+    supporting_skills:
+    - test-agent
+    - yss-implementation-contract-compiler
+    - tdd
+    skills:
+    - frontend-agent
+    - test-agent
+    - yss-implementation-contract-compiler
+    - tdd
+    applies_when: slice_contract_ready_for_agent
+    not_applicable_reason: slice_contract_not_approved
+  work-unit.verification:
+    primary_skill: test-agent
+    supporting_skills:
+    - code-review
+    - diagnosing-bugs
+    - tdd
+    skills:
+    - test-agent
+    - code-review
+    - diagnosing-bugs
+    - tdd
+    applies_when: implementation_candidate_ready_for_verification
+    not_applicable_reason: implementation_not_complete
+  work-unit.ssot-update:
+    primary_skill: maintaining-skills
+    supporting_skills:
+    - codebase-design
+    skills:
+    - maintaining-skills
+    - codebase-design
+    applies_when: template_authority_changes
+    not_applicable_reason: no_template_authority_change
+  work-unit.skill-projection-sync:
+    primary_skill: maintaining-skills
+    supporting_skills: []
+    skills:
+    - maintaining-skills
+    applies_when: canonical_skill_changes
+    not_applicable_reason: no_skill_change
+  work-unit.intensity-aware-verification:
+    primary_skill: maintaining-skills
+    supporting_skills:
+    - tdd
+    skills:
+    - maintaining-skills
+    - tdd
+    applies_when: template_maintenance_verification
+    not_applicable_reason: no_template_maintenance
+  work-unit.intensity-aware-review:
+    primary_skill: code-review
+    supporting_skills:
+    - maintaining-skills
+    skills:
+    - code-review
+    - maintaining-skills
+    applies_when: template_maintenance_review
+    not_applicable_reason: no_template_maintenance
+  work-unit.release-and-rollback:
+    primary_skill: maintaining-skills
+    supporting_skills:
+    - handoff
+    skills:
+    - maintaining-skills
+    - handoff
+    applies_when: template_checkpoint_required
+    not_applicable_reason: no_checkpoint_required
+  work-unit.frontend-engineering-design:
+    primary_skill: architecture-agent
+    supporting_skills:
+    - codebase-design
+    - research
+    - tdd
+    skills:
+    - architecture-agent
+    - codebase-design
+    - research
+    - tdd
+    applies_when: frontend_delivery_inputs_verified
+    not_applicable_reason: frontend_inputs_missing_blocked
+readiness:
+  all_of:
+  - upstream_inputs_current_and_approved
+  - tactical_design_current_or_not_applicable_recorded
+  - api_freeze_or_no_api_impact_recorded
+  - data_architecture_or_no_data_impact_recorded
+  - ui_inputs_or_no_ui_impact_recorded
+  - implementation_repositories_and_commands_registered
+  - allowed_write_paths_registered
+  - test_seams_and_acceptance_executable
+  - task_packages_share_contract_version
+  - no_blocking_signals
+parallelism:
+  test_seam_before_implementation: true
+  frontend_backend_parallel_after_contract: false
+  verifier_must_differ_from_worker: true
+gates:
+  architecture:
+  - gate.tactical-design-approved
+  - gate.slice-contract-approved
+  implementation:
+  - gate.slice-ready-for-agent
+  verification:
+  - gate.fresh-verification-passed
+  human:
+  - gate.high-risk-architecture-confirmed
+  - gate.openapi-freeze-confirmed
+  - gate.merge-approved
+re_route_on:
+- api-schema-impact
+- database-schema-impact
+- state-machine-impact
+- aggregate-impact
+- invariant-impact
+- scaffold-architecture-decision-changed
+- scaffold-profile-or-module-closure-changed
+- new-write-path
+- new-repository
+- contract-violation
+- test-seam-changed
+- verification-command-changed
+scaffold_architecture_decision:
+  applies_when: backend_scaffold_status_required
+  owner: role.harness-orchestrator
+  evidence_file: scaffold-architecture-decisions.yaml
+  schema_ref: docs/process/schemas/scaffold-architecture-decisions.schema.json
+  recommendation:
+    domain_driven_signals:
+    - aggregate_invariants
+    - complex_state_transitions
+    - domain_events
+    - consistency_boundary
+    - rich_domain_behavior
+    layered_mvc_signals:
+    - thin_crud
+    - reporting_query
+    - simple_data_maintenance
+    - no_aggregate_invariants
+    output_required:
+    - recommended_architecture
+    - recommendation_reasons
+  interaction:
+    choices:
+    - domain-driven
+    - layered-mvc
+    user_confirmation_required: true
+    silent_default: forbidden
+    generator_interaction: forbidden
+  project_inheritance:
+    root_project_choice: child_default_only
+    child_projects: visible_in_batch_confirmation
+    child_override: allowed-with-reason
+  lifecycle_status: lifecycle-approved
+  change_policy:
+    existing_or_initialized_project: no-regeneration
+    architecture_switch: separate-migration-work-unit
+    digest_change: stale-and-recompile
+backend_scaffold:
+  status: not-applicable-in-frontend-profile
+  owner: upstream-backend-project
+frontend_delivery:
+  contract_ref: docs/process/frontend-backend-delivery.md
+  verifier: scripts/verify-frontend-delivery
+  every_start_and_resume: true
+  inputs_do_not_approve_implementation: true

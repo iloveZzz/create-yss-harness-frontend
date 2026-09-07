@@ -1,0 +1,279 @@
+schema_version: 1
+default_profile: fast
+max_concurrency: 4
+profiles:
+  fast:
+    always_groups: [hygiene]
+  candidate:
+    always_groups: [hygiene, candidate-integrity]
+  release:
+    all_groups: true
+core_escalation_patterns:
+  - AGENTS.md
+  - yss-project.yaml
+  - docs/process/maintenance-intensity.yaml
+  - docs/process/lifecycle-registry.yaml
+  - scripts/verify-template
+  - scripts/verify-template-fast
+  - scripts/verify-template-candidate
+  - scripts/run-template-verification
+  - scripts/lib/template-verification.mjs
+  - scripts/verify-template-verification-scenarios
+  - docs/process/template-verification-profiles.yaml
+required_files:
+  - yss-project.yaml
+  - AGENTS.md
+  - CONTEXT.md
+  - skills-lock.json
+  - docs/agents/yss-skill-registry.yaml
+  - .agents/skills/yss-implementation-contract-compiler/SKILL.md
+  - .agents/skills/yss-implementation-contract-compiler/references/compiler-contract.yaml
+  - .agents/skills/yss-implementation-contract-compiler/references/boundaries.md
+  - .agents/skills/yss-implementation-contract-compiler/references/slice-implementation-contract.md
+  - .agents/skills/yss-implementation-contract-compiler/tests/compiler-scenarios.test.mjs
+  - .agents/skills/yss-prototype-stage/scripts/visual-baseline-contract.mjs
+  - .agents/skills/yss-skill-source-index-refresh/SKILL.md
+  - docs/agents/digital-human-roles.yaml
+  - docs/process/lifecycle-registry.yaml
+  - docs/process/lifecycle-registry-baseline.json
+  - docs/process/maintenance-intensity.yaml
+  - docs/process/harness-profile.yaml
+  - docs/process/template-verification-profiles.yaml
+  - docs/process/schemas/lifecycle-checkpoint.schema.json
+  - docs/process/schemas/frontend-implementation-evidence.schema.json
+  - docs/process/schemas/scaffold-architecture-decisions.schema.json
+  - docs/process/schemas/strategic-design-handoff.schema.json
+  - docs/design/schemas/visual-baseline.schema.json
+  - docs/design/templates/visual-baseline-template.yaml
+  - docs/process/schemas/digital-human-task-package.schema.json
+  - docs/process/schemas/subagent-task-package.schema.json
+  - docs/process/schemas/maintenance-review-record.schema.json
+  - docs/process/templates/lifecycle-checkpoint-template.yaml
+  - docs/process/templates/frontend-implementation-plan-template.yaml
+  - docs/process/templates/frontend-implementation-verification-template.yaml
+  - docs/process/templates/scaffold-architecture-decisions-template.yaml
+  - docs/templates/subagent-task-package-template.md
+  - .agents/skills/yss-tactical-design/SKILL.md
+  - .agents/skills/yss-tactical-design/agents/openai.yaml
+  - .agents/skills/yss-tactical-design/references/tactical-design-contract.md
+  - .agents/skills/yss-tactical-design/references/tactical-design.schema.json
+  - .agents/skills/yss-tactical-design/references/validation-rules.md
+  - .agents/skills/yss-tactical-design/references/output-template.md
+  - .agents/skills/yss-tactical-design/scripts/validate-tactical-design.mjs
+  - .agents/skills/yss-tactical-design/tests/run-scenarios.mjs
+  - .agents/skills/yss-layered-mvc-scaffold-generator/SKILL.md
+  - .agents/skills/yss-layered-mvc-scaffold-generator/agents/openai.yaml
+  - .agents/skills/yss-layered-mvc-scaffold-generator/references/architecture.md
+  - .agents/skills/yss-layered-mvc-scaffold-generator/scripts/generate_scaffold.mjs
+  - .agents/skills/yss-layered-mvc-scaffold-generator/scripts/run_scaffold_verification.mjs
+  - .agents/skills/yss-layered-mvc-scaffold-generator/scripts/generate_and_verify_scaffold.mjs
+  - .agents/skills/yss-layered-mvc-scaffold-generator/scripts/scaffold-generator.test.mjs
+  - scripts/repository-mode
+  - scripts/implementation-path-policy
+  - scripts/repository-scope-policy
+  - scripts/sync-skills
+  - scripts/update-skill-lock
+  - scripts/generate-lifecycle-artifacts
+  - scripts/verify-lifecycle-registry
+  - scripts/verify-lifecycle-checkpoint
+  - scripts/verify-frontend-implementation-evidence
+  - scripts/verify-frontend-implementation-evidence-scenarios
+  - scripts/verify-scaffold-architecture-decisions
+  - scripts/verify-scaffold-architecture-decision-scenarios
+  - scripts/lib/task-package.mjs
+  - scripts/lib/harness-profile.mjs
+  - scripts/lib/entry-alignment.mjs
+  - scripts/lib/instance-distribution.mjs
+  - scripts/lib/json-schema.mjs
+  - scripts/lib/maintenance-review.mjs
+  - scripts/lib/task-package-schema.mjs
+  - scripts/lib/template-verification.mjs
+  - scripts/verify-digital-human-task-package
+  - scripts/verify-digital-human-task-package-scenarios
+  - scripts/verify-subagent-task-package
+  - scripts/verify-subagent-task-package-scenarios
+  - scripts/verify-lifecycle-transition-scenarios
+  - scripts/verify-maintenance-checkpoint
+  - scripts/verify-maintenance-review-record
+  - scripts/verify-maintenance-intensity-scenarios
+  - scripts/verify-skill-registry
+  - scripts/lib/implementation-contract-compiler.mjs
+  - scripts/generate-yss-skill-boundaries
+  - scripts/audit-yss-backend-skills
+  - scripts/verify-retired-skill-ids
+  - scripts/verify-skill-governance
+  - scripts/verify-yss-dto-openapi-profile
+  - scripts/verify-yss-dto-openapi-scenarios
+  - scripts/verify-digital-human-roles
+  - scripts/verify-digital-human-roles-scenarios
+  - scripts/verify-harness-profile
+  - scripts/verify-harness-profile-scenarios
+  - scripts/verify-entry-alignment
+  - scripts/verify-instance-distribution
+  - scripts/verify-approval-record
+  - scripts/export-yss-skills
+  - scripts/run-template-verification
+  - scripts/verify-template-fast
+  - scripts/verify-template-candidate
+  - scripts/verify-template
+  - scripts/verify-template-verification-scenarios
+syntax_files:
+  - scripts/sync-skills
+  - scripts/update-skill-lock
+  - scripts/generate-lifecycle-artifacts
+  - scripts/verify-lifecycle-registry
+  - scripts/verify-lifecycle-checkpoint
+  - scripts/verify-frontend-implementation-evidence
+  - scripts/lib/task-package.mjs
+  - scripts/lib/harness-profile.mjs
+  - scripts/lib/entry-alignment.mjs
+  - scripts/lib/instance-distribution.mjs
+  - scripts/verify-digital-human-task-package
+  - scripts/verify-digital-human-task-package-scenarios
+  - scripts/verify-subagent-task-package
+  - scripts/verify-subagent-task-package-scenarios
+  - scripts/verify-maintenance-checkpoint
+  - scripts/verify-maintenance-intensity-scenarios
+  - scripts/verify-skill-registry
+  - scripts/verify-skill-governance
+  - scripts/verify-yss-dto-openapi-profile
+  - scripts/verify-yss-dto-openapi-scenarios
+  - scripts/verify-digital-human-roles
+  - scripts/verify-digital-human-roles-scenarios
+  - scripts/verify-harness-profile
+  - scripts/verify-harness-profile-scenarios
+  - scripts/verify-entry-alignment
+  - scripts/verify-instance-distribution
+  - scripts/verify-instance-distribution-scenarios
+  - scripts/verify-approval-record
+  - scripts/lib/lifecycle-transition.mjs
+  - scripts/verify-lifecycle-scenarios
+  - scripts/verify-lifecycle-transition-scenarios
+  - scripts/verify-matt-yss-integration-scenarios
+  - scripts/verify-prototype-backend-scaffold-scenarios
+  - scripts/verify-yss-implementation-contract-compiler-scenarios
+  - scripts/verify-openapi-yaml-first-scenarios
+  - scripts/verify-openapi-json-handoff-scenarios
+  - scripts/verify-repository-scope-scenarios
+  - scripts/export-yss-skills
+  - scripts/lib/maintenance-review.mjs
+  - scripts/lib/json-schema.mjs
+  - scripts/lib/task-package-schema.mjs
+  - scripts/verify-maintenance-review-record
+  - scripts/lib/template-verification.mjs
+  - scripts/run-template-verification
+  - scripts/verify-template-verification-scenarios
+routing:
+  - patterns: ["scripts/*backend-delivery*", "scripts/*frontend-delivery*", "scripts/lib/*backend-delivery*", "scripts/lib/*frontend-delivery*", "scripts/fixtures/backend-delivery/**", "docs/process/frontend-backend-delivery.md", "docs/process/schemas/backend-delivery*", "docs/process/schemas/frontend-delivery*"]
+    groups: [frontend-delivery]
+  - patterns: ["scripts/*strategic-handoff*", "scripts/lib/strategic-handoff*", "scripts/fixtures/strategic-handoff/**", "docs/process/strategic-handoff-package.md", "docs/process/schemas/strategic-handoff-*"]
+    groups: [strategic-handoff-package]
+  - patterns: [AGENTS.md, CONTEXT.md, yss-project.yaml, package.json, .gitignore, README.md, "docs/**"]
+    groups: [hygiene]
+  - patterns: [skills-lock.json, ".agents/skills/**", ".claude/skills/**", ".codex/skills/**", ".cursor/skills/**", ".pi/skills/**", ".qoder/skills/**", ".trae/skills/**", "docs/agents/yss-skill-registry.yaml", "scripts/*skill*"]
+    groups: [skills]
+  - patterns: [".agents/skills/yss-tactical-design/**"]
+    groups: [tactical-design]
+  - patterns: ["docs/process/maintenance-*", "docs/process/harness-process-tailoring.md", "docs/process/schemas/maintenance-*", "scripts/*maintenance*", "scripts/lib/maintenance-*"]
+    groups: [maintenance]
+  - patterns: ["docs/process/lifecycle-*", "docs/process/templates/lifecycle-*", "scripts/*lifecycle*", "scripts/lib/lifecycle-*"]
+    groups: [lifecycle]
+  - patterns: ["docs/agents/digital-human-*", "docs/process/schemas/*task-package*", "docs/templates/subagent-task-package-template.md", "scripts/*task-package*", "scripts/*digital-human*", "scripts/lib/task-package*"]
+    groups: [collaboration, workspace-fixtures]
+  - patterns: ["docs/templates/openapi-*", ".agents/skills/yss-openapi-*/**", ".agents/skills/yss-dto/**", "scripts/*openapi*", "scripts/*dto*"]
+    groups: [contracts]
+  - patterns: ["docs/process/harness-profile.yaml", "docs/process/instance-distribution-manifest.yaml", "scripts/*harness-profile*", "scripts/*entry-alignment*", "scripts/*instance-distribution*", "scripts/lib/harness-profile.mjs", "scripts/lib/entry-alignment.mjs", "scripts/lib/instance-distribution.mjs"]
+    groups: [profile, workspace-fixtures]
+  - patterns: ["docs/process/implementation-*", "scripts/*repository*", "scripts/*implementation*", "scripts/*scaffold*"]
+    groups: [implementation]
+  - patterns: [".template-source/**", "scripts/vendor/**"]
+    groups: [tooling]
+  - patterns: [".github/**"]
+    groups: [candidate-integrity]
+  - patterns: ["scripts/**"]
+    groups: [hygiene]
+groups:
+  frontend-delivery:
+    commands:
+      - { run: "scripts/verify-frontend-delivery-scenarios" }
+  strategic-handoff-package:
+    commands:
+      - { run: "node --check scripts/lib/strategic-handoff.mjs" }
+      - { run: "scripts/verify-strategic-handoff-package-scenarios" }
+  hygiene:
+    commands: []
+  tooling:
+    commands:
+      - { run: ".template-source/scripts/evidence-index --check", when: template-source }
+      - { run: "pnpm --dir .template-source/tooling/node test", when: template-source }
+      - { run: "pnpm --dir .template-source/tooling/node check:vendor", when: template-source }
+  skills:
+    commands:
+      - { run: "scripts/sync-skills --check" }
+      - { run: "scripts/update-skill-lock --check" }
+      - { run: "scripts/verify-skill-registry" }
+      - { run: "scripts/verify-skill-governance" }
+  tactical-design:
+    commands:
+      - { run: "node --check .agents/skills/yss-tactical-design/scripts/validate-tactical-design.mjs" }
+      - { run: "node --check .agents/skills/yss-tactical-design/tests/run-scenarios.mjs" }
+      - { run: "node .agents/skills/yss-tactical-design/tests/run-scenarios.mjs" }
+  contracts:
+    commands:
+      - { run: "scripts/verify-yss-dto-openapi-profile" }
+      - { run: "scripts/verify-yss-dto-openapi-scenarios" }
+      - { run: "scripts/verify-openapi-yaml-first-scenarios" }
+      - { run: "scripts/verify-openapi-json-handoff-scenarios" }
+  collaboration:
+    commands:
+      - { run: "scripts/verify-digital-human-roles" }
+      - { run: "scripts/verify-digital-human-roles-scenarios" }
+      - { run: "scripts/verify-approval-record docs/templates/approval-record-template.yaml" }
+  lifecycle:
+    commands:
+      - { run: "scripts/verify-lifecycle-registry" }
+      - { run: "scripts/verify-lifecycle-checkpoint docs/process/templates/lifecycle-checkpoint-template.yaml" }
+      - { run: "scripts/verify-frontend-implementation-evidence --allow-template docs/process/templates/frontend-implementation-plan-template.yaml" }
+      - { run: "scripts/verify-frontend-implementation-evidence --allow-template docs/process/templates/frontend-implementation-verification-template.yaml" }
+      - { run: "scripts/verify-frontend-implementation-evidence-scenarios" }
+      - { run: "scripts/verify-scaffold-architecture-decisions --allow-template docs/process/templates/scaffold-architecture-decisions-template.yaml" }
+      - { run: "scripts/verify-scaffold-architecture-decision-scenarios" }
+      - { run: "scripts/verify-lifecycle-scenarios" }
+      - { run: "scripts/verify-lifecycle-transition-scenarios" }
+  profile:
+    commands:
+      - { run: "scripts/verify-harness-profile" }
+      - { run: "scripts/verify-harness-profile-scenarios" }
+      - { run: "scripts/verify-entry-alignment" }
+  workspace-fixtures:
+    commands:
+      - { run: "scripts/verify-subagent-task-package-scenarios" }
+      - { run: "scripts/verify-digital-human-task-package-scenarios" }
+      - { run: "scripts/verify-digital-human-task-package .template-source/evidence/maintenance/digital-human-task-package-review-task.yaml", when: template-source }
+      - { run: "scripts/verify-digital-human-task-package .template-source/evidence/maintenance/lifecycle-ticket-transition-review-task-package.yaml", when: template-source }
+      - { run: "scripts/verify-instance-distribution" }
+      - { run: "scripts/verify-instance-distribution-scenarios", when: template-source }
+  maintenance:
+    commands:
+      - { run: "scripts/verify-maintenance-checkpoint .template-source/evidence/maintenance/yss-tactical-design-l3-checkpoint-2026-08-27.yaml", when: template-source }
+      - { run: "scripts/verify-maintenance-intensity-scenarios" }
+  implementation:
+    commands:
+      - { run: "scripts/verify-implementation-path-scenarios" }
+      - { run: "scripts/verify-repository-scope-scenarios" }
+      - { run: "scripts/verify-scaffold-generator-scenarios" }
+      - { run: "node --test .agents/skills/yss-ddd-scaffold-generator/scripts/scaffold-generator.test.mjs" }
+      - { run: "node --test .agents/skills/yss-layered-mvc-scaffold-generator/scripts/scaffold-generator.test.mjs" }
+      - { run: "scripts/verify-prototype-backend-scaffold-scenarios" }
+      - { run: "scripts/verify-matt-yss-integration-scenarios" }
+      - { run: "scripts/verify-yss-implementation-contract-compiler-scenarios" }
+      - { run: "scripts/generate-yss-skill-boundaries --check" }
+      - { run: "scripts/audit-yss-backend-skills --check" }
+      - { run: "scripts/verify-retired-skill-ids" }
+      - { run: "scripts/verify-yss-ui-scenarios" }
+  governance-release:
+    commands:
+      - { run: "scripts/verify-governance-release" }
+  candidate-integrity:
+    commands:
+      - { run: "node scripts/verify-template-verification-scenarios" }

@@ -1,0 +1,2 @@
+-s .mvn/settings.xml
+-P yss-internal
