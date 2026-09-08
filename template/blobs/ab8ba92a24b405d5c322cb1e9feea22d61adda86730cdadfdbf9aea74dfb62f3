@@ -44,7 +44,7 @@ slice_contract:
     verification_commands: []
     full_reroute_triggers: []
   architecture:
-    tactical_design_ref:
+    frontend_engineering_design_ref:
     tactical_design_version:
     aggregate_refs: []
     invariant_refs: []
@@ -109,3 +109,5 @@ API schema、数据库 schema、状态机、Visual Baseline 版本或 digest、�
 一个切片可以组合多个窄 Recipe，但只计算一次闭包。Recipe 只能引用 capability；合同必须同时冻结 `required_capabilities`、`required_skills`、原因链与两个 digest。
 
 实现任务包使用 execution_state: Worker；测试 Agent 的独立 Review / Verifier 必须使用不同 actor_id。结果必须符合 workflow-execution-result-v1，并记录实际命令、退出码、执行时间和证据引用。
+
+前端专职合同仅填写页面工程、组件、状态管理、API 消费与测试边界；示例中旧 DDD 字段只为历史合同阅读保留，不是前端必填项。来自导入包的承接使用前端联合接收核验，不生成后端技术设计。

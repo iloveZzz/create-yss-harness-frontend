@@ -5,7 +5,7 @@ description: 在战略与后端交付联合接收通过后，定义前端工程�
 
 # Architecture Agent
 
-在前端专职 profile 中，联合输入通过后负责页面工程、组件边界、状态管理、API 消费和测试 seam 的工程设计。后端 DDD 模型只读消费；本地无领域影响时记录 not-applicable。有新领域影响须回交后端或战略方。
+在前端专职 profile 中，联合输入通过后负责页面工程、组件边界、状态管理、API 消费和测试 seam 的工程设计。后端 DDD / MVC 设计只读消费；本地无领域影响时记录 not-applicable。有新领域影响须回交后端或战略方。
 
 ## 交付内容
 

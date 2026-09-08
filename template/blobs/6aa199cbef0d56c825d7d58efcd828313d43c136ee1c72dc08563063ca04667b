@@ -1,6 +1,6 @@
 ---
 name: yss-implementation-contract-compiler
-description: 将已批准的 DDD 战术设计、冻结契约和 capability 编译为 Slice Implementation Contract v2 草案；当垂直切片进入实现、验证结果或需要重路由时使用。
+description: 将已批准的前端工程设计和上游联合交付、冻结契约和 capability 编译为 Slice Implementation Contract v2 草案；当垂直切片进入实现、验证结果或需要重路由时使用。
 ---
 
 # YSS Implementation Contract Compiler
@@ -11,9 +11,9 @@ description: 将已批准的 DDD 战术设计、冻结契约和 capability 编�
 
 采用专职前端 profile 或显式 `frontend_delivery` 时，按 `docs/process/frontend-backend-delivery.md` 核验战略与后端联合交付；缺任一输入只诊断和回交，正式实现与恢复从当前批准的 Slice Contract 重验接收摘要和真实服务。
 
-必须读取 yss-project.yaml、CONTEXT.md、Spec / 战略设计、Tactical Design Contract、API / 数据 / UI 影响、实现仓库登记、允许写路径和验证命令。输入缺失、未批准或过期时返回 blocked。
+必须读取 yss-project.yaml、CONTEXT.md、Spec / 战略设计、前端工程设计、已核验的后端交付、API / UI 消费影响、实现仓库登记、允许写路径和验证命令。输入缺失、未批准或过期时返回 blocked。
 
-当 backend `scaffold_status=required` 时，还必须读取当前 `scaffold-architecture-decisions.yaml`。Harness Orchestrator 先基于领域复杂度给出 `domain-driven` / `layered-mvc` 推荐并取得用户逐项目确认，本体选择只作为子项目预填默认；编译器不得自行默认、提问或批准。确认 DDD 时绑定 `yss-ddd-scaffold-generator`，确认 MVC 时绑定 `yss-layered-mvc-scaffold-generator`，并把 decision ref / id / digest、Profile 与确定性模块闭包写入 scaffold contract schema v3。
+后端 DDD / MVC 技术设计、架构确认和脚手架由后端项目持有；本仓只读消费已冻结 API、联合交付与页面工程约束。两类战略交接合同均可导入，不为前端切片补造后端技术设计。
 
 ## 编译结果
 
@@ -35,7 +35,7 @@ description: 将已批准的 DDD 战术设计、冻结契约和 capability 编�
 - 编译器不得输出 approved、ready-for-agent 或 completed。
 - Registry、编译器合同或 Slice Contract schema v1 一律拒绝并返回迁移提示；不自动升级，不提供旧技能名 alias。
 - 任一 Registry/Compiler digest 变化使合同 `stale`；重新编译后仍须由 `harness-orchestrator` 再批准。
-- 领域影响缺少批准且版本当前的 Tactical Design Contract 时，不得路由 Domain 实现。
+- 发现后端业务规则、架构、状态或持久化变化时回交后端 / 战略方，不路由本地 Domain 实现。
 - API、状态、Visual Baseline 版本或 digest、数据模型、写路径、测试 seam 或验证命令变化时，必须返回 new_impacts / drift 并完整重路由。
 - UI 实现先按 `visual_baseline_case_ids` 读取 manifest、语义引用和对应 PNG，再以相同 case_id、视口、状态和数据 fixture 捕获实现图；禁止目录 glob 和图片独立猜义。
 - 前端和后端任务必须使用同一合同版本；版本不一致立即 blocked。

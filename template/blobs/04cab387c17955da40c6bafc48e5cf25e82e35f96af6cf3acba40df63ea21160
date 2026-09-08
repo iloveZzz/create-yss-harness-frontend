@@ -97,12 +97,7 @@ slice_contract_required:
   - human_review_points
   - full_reroute_triggers
   architecture:
-  - tactical_design_ref
-  - tactical_design_version
-  - aggregate_refs
-  - invariant_refs
-  - state_behavior_refs
-  - gateway_boundary_ref
+  - frontend_engineering_design_ref
   - decision_refs
   frontend:
   - status

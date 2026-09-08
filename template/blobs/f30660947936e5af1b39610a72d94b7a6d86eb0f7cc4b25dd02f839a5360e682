@@ -30,7 +30,7 @@ README、用户指南和 `CLAUDE.md` 只解释或指向上述事实，不定义�
 - 创建或修改稳定资产前必须读取并持续消费根 `CONTEXT.md`；无法读取时返回 `blocked`。
 - 稳定术语先在根 `CONTEXT.md` 登记 PascalCase 英文标识，再进入契约、Ticket、代码或证据。每仓仅允许一个根 `CONTEXT.md`；术语引用使用 `<ContextId>/<EnglishIdentifier>`，真正共享的术语使用 `Global/<EnglishIdentifier>`。
 - `project-instance` 每个工作单元流转或申请批准前完成 `context_reconciliation`：先回写稳定术语，再核对 `document_digest` 与 `referenced_terms_digest`；缺失、冲突或漂移即 `blocked`。模板源只校验该合同并记录有理由的 `not-applicable`。
-- 当前流程使用 `harness-entry`、`tactical-design`、`slice-contract`、`slice-implementation`、`verification`；退役入口以 `docs/agents/skill-migrations.md` 为准，不参与当前路由。
+- 当前流程使用 `harness-entry`、`frontend-engineering-design`、`slice-contract`、`slice-implementation`、`verification`；退役入口以 `docs/agents/skill-migrations.md` 为准，不参与当前路由。
 
 ## 4. `template-source` 维护
 

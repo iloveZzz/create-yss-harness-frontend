@@ -94,6 +94,8 @@ skill_scope:
   - yss-repository
   - yss-resilience4j
   - yss-security-algorithm
+  - yss-technical-design
+  - yss-mvc-design
   - yss-tactical-design
   - yss-up-springboot3
   - yss-userinfo

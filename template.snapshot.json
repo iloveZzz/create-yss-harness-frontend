@@ -6,7 +6,7 @@
   "metadataFile": ".yss-harness-frontend.json",
   "templateName": "yss-harness-frontend-agent",
   "templateSource": "github:iloveZzz/yss-harness-frontend-agent",
-  "templateCommit": "8b3464374b030d06d696a73088d31e23d10023e6",
+  "templateCommit": "be68fb715d637d7a562ad3538ea5ac25395d73f3",
   "manifestHash": "fadcf0090ba516d78f4d9291470c3e93b61aef1dc1769fb29ac419f91eb4ef1d",
   "files": {
     ".agents/rules/yss-ai-skills.md": {
@@ -1181,15 +1181,15 @@
     },
     ".agents/skills/architecture-agent/SKILL.md": {
       "type": "file",
-      "digest": "37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a",
+      "digest": "d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f",
       "mode": 420,
-      "blob": "blobs/37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a"
+      "blob": "blobs/d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f"
     },
     ".agents/skills/architecture-agent/agents/openai.yaml": {
       "type": "file",
-      "digest": "5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9",
+      "digest": "733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271",
       "mode": 420,
-      "blob": "blobs/5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9"
+      "blob": "blobs/733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271"
     },
     ".agents/skills/ask-matt/PHASE-BOUNDARIES.md": {
       "type": "file",
@@ -1439,9 +1439,9 @@
     },
     ".agents/skills/harness-orchestrator/agents/openai.yaml": {
       "type": "file",
-      "digest": "da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4",
+      "digest": "8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f",
       "mode": 420,
-      "blob": "blobs/da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4"
+      "blob": "blobs/8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f"
     },
     ".agents/skills/harness-orchestrator/references/orchestration-contract.yaml": {
       "type": "file",
@@ -2273,9 +2273,9 @@
     },
     ".agents/skills/yss-implementation-contract-compiler/SKILL.md": {
       "type": "file",
-      "digest": "5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d",
+      "digest": "6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b",
       "mode": 420,
-      "blob": "blobs/5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d"
+      "blob": "blobs/6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b"
     },
     ".agents/skills/yss-implementation-contract-compiler/agents/openai.yaml": {
       "type": "file",
@@ -2291,15 +2291,15 @@
     },
     ".agents/skills/yss-implementation-contract-compiler/references/compiler-contract.yaml": {
       "type": "file",
-      "digest": "2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a",
+      "digest": "04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160",
       "mode": 420,
-      "blob": "blobs/2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a"
+      "blob": "blobs/04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160"
     },
     ".agents/skills/yss-implementation-contract-compiler/references/slice-implementation-contract.md": {
       "type": "file",
-      "digest": "bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36",
+      "digest": "ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3",
       "mode": 420,
-      "blob": "blobs/bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36"
+      "blob": "blobs/ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3"
     },
     ".agents/skills/yss-implementation-contract-compiler/references/yss-skill-execution-result.md": {
       "type": "file",
@@ -4943,15 +4943,15 @@
     },
     ".claude/skills/architecture-agent/SKILL.md": {
       "type": "file",
-      "digest": "37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a",
+      "digest": "d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f",
       "mode": 420,
-      "blob": "blobs/37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a"
+      "blob": "blobs/d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f"
     },
     ".claude/skills/architecture-agent/agents/openai.yaml": {
       "type": "file",
-      "digest": "5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9",
+      "digest": "733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271",
       "mode": 420,
-      "blob": "blobs/5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9"
+      "blob": "blobs/733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271"
     },
     ".claude/skills/ask-matt/PHASE-BOUNDARIES.md": {
       "type": "file",
@@ -5201,9 +5201,9 @@
     },
     ".claude/skills/harness-orchestrator/agents/openai.yaml": {
       "type": "file",
-      "digest": "da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4",
+      "digest": "8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f",
       "mode": 420,
-      "blob": "blobs/da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4"
+      "blob": "blobs/8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f"
     },
     ".claude/skills/harness-orchestrator/references/orchestration-contract.yaml": {
       "type": "file",
@@ -6035,9 +6035,9 @@
     },
     ".claude/skills/yss-implementation-contract-compiler/SKILL.md": {
       "type": "file",
-      "digest": "5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d",
+      "digest": "6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b",
       "mode": 420,
-      "blob": "blobs/5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d"
+      "blob": "blobs/6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b"
     },
     ".claude/skills/yss-implementation-contract-compiler/agents/openai.yaml": {
       "type": "file",
@@ -6053,15 +6053,15 @@
     },
     ".claude/skills/yss-implementation-contract-compiler/references/compiler-contract.yaml": {
       "type": "file",
-      "digest": "2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a",
+      "digest": "04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160",
       "mode": 420,
-      "blob": "blobs/2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a"
+      "blob": "blobs/04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160"
     },
     ".claude/skills/yss-implementation-contract-compiler/references/slice-implementation-contract.md": {
       "type": "file",
-      "digest": "bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36",
+      "digest": "ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3",
       "mode": 420,
-      "blob": "blobs/bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36"
+      "blob": "blobs/ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3"
     },
     ".claude/skills/yss-implementation-contract-compiler/references/yss-skill-execution-result.md": {
       "type": "file",
@@ -8705,15 +8705,15 @@
     },
     ".codex/skills/architecture-agent/SKILL.md": {
       "type": "file",
-      "digest": "37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a",
+      "digest": "d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f",
       "mode": 420,
-      "blob": "blobs/37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a"
+      "blob": "blobs/d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f"
     },
     ".codex/skills/architecture-agent/agents/openai.yaml": {
       "type": "file",
-      "digest": "5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9",
+      "digest": "733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271",
       "mode": 420,
-      "blob": "blobs/5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9"
+      "blob": "blobs/733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271"
     },
     ".codex/skills/ask-matt/PHASE-BOUNDARIES.md": {
       "type": "file",
@@ -10013,9 +10013,9 @@
     },
     ".codex/skills/harness-orchestrator/agents/openai.yaml": {
       "type": "file",
-      "digest": "da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4",
+      "digest": "8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f",
       "mode": 420,
-      "blob": "blobs/da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4"
+      "blob": "blobs/8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f"
     },
     ".codex/skills/harness-orchestrator/references/orchestration-contract.yaml": {
       "type": "file",
@@ -11147,9 +11147,9 @@
     },
     ".codex/skills/yss-implementation-contract-compiler/SKILL.md": {
       "type": "file",
-      "digest": "5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d",
+      "digest": "6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b",
       "mode": 420,
-      "blob": "blobs/5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d"
+      "blob": "blobs/6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b"
     },
     ".codex/skills/yss-implementation-contract-compiler/agents/openai.yaml": {
       "type": "file",
@@ -11165,15 +11165,15 @@
     },
     ".codex/skills/yss-implementation-contract-compiler/references/compiler-contract.yaml": {
       "type": "file",
-      "digest": "2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a",
+      "digest": "04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160",
       "mode": 420,
-      "blob": "blobs/2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a"
+      "blob": "blobs/04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160"
     },
     ".codex/skills/yss-implementation-contract-compiler/references/slice-implementation-contract.md": {
       "type": "file",
-      "digest": "bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36",
+      "digest": "ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3",
       "mode": 420,
-      "blob": "blobs/bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36"
+      "blob": "blobs/ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3"
     },
     ".codex/skills/yss-implementation-contract-compiler/references/yss-skill-execution-result.md": {
       "type": "file",
@@ -13817,15 +13817,15 @@
     },
     ".cursor/skills/architecture-agent/SKILL.md": {
       "type": "file",
-      "digest": "37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a",
+      "digest": "d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f",
       "mode": 420,
-      "blob": "blobs/37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a"
+      "blob": "blobs/d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f"
     },
     ".cursor/skills/architecture-agent/agents/openai.yaml": {
       "type": "file",
-      "digest": "5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9",
+      "digest": "733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271",
       "mode": 420,
-      "blob": "blobs/5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9"
+      "blob": "blobs/733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271"
     },
     ".cursor/skills/ask-matt/PHASE-BOUNDARIES.md": {
       "type": "file",
@@ -14075,9 +14075,9 @@
     },
     ".cursor/skills/harness-orchestrator/agents/openai.yaml": {
       "type": "file",
-      "digest": "da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4",
+      "digest": "8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f",
       "mode": 420,
-      "blob": "blobs/da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4"
+      "blob": "blobs/8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f"
     },
     ".cursor/skills/harness-orchestrator/references/orchestration-contract.yaml": {
       "type": "file",
@@ -14909,9 +14909,9 @@
     },
     ".cursor/skills/yss-implementation-contract-compiler/SKILL.md": {
       "type": "file",
-      "digest": "5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d",
+      "digest": "6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b",
       "mode": 420,
-      "blob": "blobs/5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d"
+      "blob": "blobs/6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b"
     },
     ".cursor/skills/yss-implementation-contract-compiler/agents/openai.yaml": {
       "type": "file",
@@ -14927,15 +14927,15 @@
     },
     ".cursor/skills/yss-implementation-contract-compiler/references/compiler-contract.yaml": {
       "type": "file",
-      "digest": "2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a",
+      "digest": "04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160",
       "mode": 420,
-      "blob": "blobs/2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a"
+      "blob": "blobs/04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160"
     },
     ".cursor/skills/yss-implementation-contract-compiler/references/slice-implementation-contract.md": {
       "type": "file",
-      "digest": "bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36",
+      "digest": "ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3",
       "mode": 420,
-      "blob": "blobs/bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36"
+      "blob": "blobs/ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3"
     },
     ".cursor/skills/yss-implementation-contract-compiler/references/yss-skill-execution-result.md": {
       "type": "file",
@@ -17591,15 +17591,15 @@
     },
     ".pi/skills/architecture-agent/SKILL.md": {
       "type": "file",
-      "digest": "37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a",
+      "digest": "d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f",
       "mode": 420,
-      "blob": "blobs/37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a"
+      "blob": "blobs/d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f"
     },
     ".pi/skills/architecture-agent/agents/openai.yaml": {
       "type": "file",
-      "digest": "5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9",
+      "digest": "733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271",
       "mode": 420,
-      "blob": "blobs/5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9"
+      "blob": "blobs/733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271"
     },
     ".pi/skills/ask-matt/PHASE-BOUNDARIES.md": {
       "type": "file",
@@ -17849,9 +17849,9 @@
     },
     ".pi/skills/harness-orchestrator/agents/openai.yaml": {
       "type": "file",
-      "digest": "da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4",
+      "digest": "8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f",
       "mode": 420,
-      "blob": "blobs/da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4"
+      "blob": "blobs/8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f"
     },
     ".pi/skills/harness-orchestrator/references/orchestration-contract.yaml": {
       "type": "file",
@@ -18683,9 +18683,9 @@
     },
     ".pi/skills/yss-implementation-contract-compiler/SKILL.md": {
       "type": "file",
-      "digest": "5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d",
+      "digest": "6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b",
       "mode": 420,
-      "blob": "blobs/5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d"
+      "blob": "blobs/6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b"
     },
     ".pi/skills/yss-implementation-contract-compiler/agents/openai.yaml": {
       "type": "file",
@@ -18701,15 +18701,15 @@
     },
     ".pi/skills/yss-implementation-contract-compiler/references/compiler-contract.yaml": {
       "type": "file",
-      "digest": "2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a",
+      "digest": "04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160",
       "mode": 420,
-      "blob": "blobs/2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a"
+      "blob": "blobs/04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160"
     },
     ".pi/skills/yss-implementation-contract-compiler/references/slice-implementation-contract.md": {
       "type": "file",
-      "digest": "bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36",
+      "digest": "ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3",
       "mode": 420,
-      "blob": "blobs/bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36"
+      "blob": "blobs/ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3"
     },
     ".pi/skills/yss-implementation-contract-compiler/references/yss-skill-execution-result.md": {
       "type": "file",
@@ -21347,15 +21347,15 @@
     },
     ".qoder/skills/architecture-agent/SKILL.md": {
       "type": "file",
-      "digest": "37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a",
+      "digest": "d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f",
       "mode": 420,
-      "blob": "blobs/37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a"
+      "blob": "blobs/d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f"
     },
     ".qoder/skills/architecture-agent/agents/openai.yaml": {
       "type": "file",
-      "digest": "5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9",
+      "digest": "733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271",
       "mode": 420,
-      "blob": "blobs/5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9"
+      "blob": "blobs/733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271"
     },
     ".qoder/skills/ask-matt/PHASE-BOUNDARIES.md": {
       "type": "file",
@@ -21605,9 +21605,9 @@
     },
     ".qoder/skills/harness-orchestrator/agents/openai.yaml": {
       "type": "file",
-      "digest": "da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4",
+      "digest": "8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f",
       "mode": 420,
-      "blob": "blobs/da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4"
+      "blob": "blobs/8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f"
     },
     ".qoder/skills/harness-orchestrator/references/orchestration-contract.yaml": {
       "type": "file",
@@ -22439,9 +22439,9 @@
     },
     ".qoder/skills/yss-implementation-contract-compiler/SKILL.md": {
       "type": "file",
-      "digest": "5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d",
+      "digest": "6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b",
       "mode": 420,
-      "blob": "blobs/5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d"
+      "blob": "blobs/6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b"
     },
     ".qoder/skills/yss-implementation-contract-compiler/agents/openai.yaml": {
       "type": "file",
@@ -22457,15 +22457,15 @@
     },
     ".qoder/skills/yss-implementation-contract-compiler/references/compiler-contract.yaml": {
       "type": "file",
-      "digest": "2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a",
+      "digest": "04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160",
       "mode": 420,
-      "blob": "blobs/2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a"
+      "blob": "blobs/04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160"
     },
     ".qoder/skills/yss-implementation-contract-compiler/references/slice-implementation-contract.md": {
       "type": "file",
-      "digest": "bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36",
+      "digest": "ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3",
       "mode": 420,
-      "blob": "blobs/bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36"
+      "blob": "blobs/ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3"
     },
     ".qoder/skills/yss-implementation-contract-compiler/references/yss-skill-execution-result.md": {
       "type": "file",
@@ -25109,15 +25109,15 @@
     },
     ".trae/skills/architecture-agent/SKILL.md": {
       "type": "file",
-      "digest": "37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a",
+      "digest": "d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f",
       "mode": 420,
-      "blob": "blobs/37b6c66818af8a929d2b0afe332d14dba485458a45072b19c250061c8ed6a96a"
+      "blob": "blobs/d346b630d99675886924da913c90e107bdf3de0f53c67e5ecfce27b62acb697f"
     },
     ".trae/skills/architecture-agent/agents/openai.yaml": {
       "type": "file",
-      "digest": "5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9",
+      "digest": "733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271",
       "mode": 420,
-      "blob": "blobs/5ee59d5f5bc0f2c03e7625f8156f428a9ebbb30a0f8b62ec9a5c53797238efc9"
+      "blob": "blobs/733812ee621aa80f4995fffb179c963dd279b37a313c7898c4f5f962b6277271"
     },
     ".trae/skills/ask-matt/PHASE-BOUNDARIES.md": {
       "type": "file",
@@ -25367,9 +25367,9 @@
     },
     ".trae/skills/harness-orchestrator/agents/openai.yaml": {
       "type": "file",
-      "digest": "da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4",
+      "digest": "8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f",
       "mode": 420,
-      "blob": "blobs/da8a90deb827fcf844dfca85ab02a0e5229c9278cfd63b63b032a7917792f3c4"
+      "blob": "blobs/8764ac0df17a23bb66507940877117d5ac2e6fd0e250468361265d99f3ecde0f"
     },
     ".trae/skills/harness-orchestrator/references/orchestration-contract.yaml": {
       "type": "file",
@@ -26201,9 +26201,9 @@
     },
     ".trae/skills/yss-implementation-contract-compiler/SKILL.md": {
       "type": "file",
-      "digest": "5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d",
+      "digest": "6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b",
       "mode": 420,
-      "blob": "blobs/5174192177eff9c8cc54522b7bd382952f76b1345abb66a13901c33f2f63222d"
+      "blob": "blobs/6aa199cbef0d56c825d7d58efcd828313d43c136ee1c72dc08563063ca04667b"
     },
     ".trae/skills/yss-implementation-contract-compiler/agents/openai.yaml": {
       "type": "file",
@@ -26219,15 +26219,15 @@
     },
     ".trae/skills/yss-implementation-contract-compiler/references/compiler-contract.yaml": {
       "type": "file",
-      "digest": "2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a",
+      "digest": "04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160",
       "mode": 420,
-      "blob": "blobs/2522d2586eb74eca9294f608c891cfe800c947519b619f210f5087c9ea36408a"
+      "blob": "blobs/04cab387c17955da40c6bafc48e5cf25e82e35f96af6cf3acba40df63ea21160"
     },
     ".trae/skills/yss-implementation-contract-compiler/references/slice-implementation-contract.md": {
       "type": "file",
-      "digest": "bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36",
+      "digest": "ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3",
       "mode": 420,
-      "blob": "blobs/bc059f9215448799e9dfadca1467f53fa15ffbd52fca936f7f54e0a9eb121b36"
+      "blob": "blobs/ab8ba92a24b405d5c322cb1e9feea22d61adda86730cdadfdbf9aea74dfb62f3"
     },
     ".trae/skills/yss-implementation-contract-compiler/references/yss-skill-execution-result.md": {
       "type": "file",
@@ -27707,9 +27707,9 @@
     },
     "AGENTS.md": {
       "type": "file",
-      "digest": "862a081cfd321d268b5235d239bb5d4b2dd27a6be8fa08baf136af7aed609e78",
+      "digest": "f30660947936e5af1b39610a72d94b7a6d86eb0f7cc4b25dd02f839a5360e682",
       "mode": 420,
-      "blob": "blobs/862a081cfd321d268b5235d239bb5d4b2dd27a6be8fa08baf136af7aed609e78"
+      "blob": "blobs/f30660947936e5af1b39610a72d94b7a6d86eb0f7cc4b25dd02f839a5360e682"
     },
     "CLAUDE.md": {
       "type": "file",
@@ -28097,9 +28097,9 @@
     },
     "docs/process/harness-profile.yaml": {
       "type": "file",
-      "digest": "af5efc75f6f6c449ac09b97cebd25bad151822914c69300b4ea62a6658e3d0b9",
+      "digest": "49f39ae200dca1cb18d2691f7d7499b2d025ce6dc5e6029df5114975196f3287",
       "mode": 420,
-      "blob": "blobs/af5efc75f6f6c449ac09b97cebd25bad151822914c69300b4ea62a6658e3d0b9"
+      "blob": "blobs/49f39ae200dca1cb18d2691f7d7499b2d025ce6dc5e6029df5114975196f3287"
     },
     "docs/process/implementation-repo-integration.md": {
       "type": "file",
@@ -28199,9 +28199,9 @@
     },
     "docs/process/schemas/strategic-design-handoff.schema.json": {
       "type": "file",
-      "digest": "46a00fcf2faa35534438d35290a55fc8d336bb7d0f45ae6b70a7bc37ff7084e3",
+      "digest": "37b4ce4a6f1a09de01e3abb476af4b7c62cc0f8e19bc936990f07c5e9b464b74",
       "mode": 420,
-      "blob": "blobs/46a00fcf2faa35534438d35290a55fc8d336bb7d0f45ae6b70a7bc37ff7084e3"
+      "blob": "blobs/37b4ce4a6f1a09de01e3abb476af4b7c62cc0f8e19bc936990f07c5e9b464b74"
     },
     "docs/process/schemas/strategic-handoff-domain-strategy.schema.json": {
       "type": "file",
@@ -28235,9 +28235,9 @@
     },
     "docs/process/strategic-handoff-package.md": {
       "type": "file",
-      "digest": "d076fa06d86a7f698b4fedef0f471dde8a89ea00dea6c4ffae4e387799c680d1",
+      "digest": "b5d8b57a75425345b22427ccb0c57b3d62e3de53c875a4ac15c73f3b60cd8ee8",
       "mode": 420,
-      "blob": "blobs/d076fa06d86a7f698b4fedef0f471dde8a89ea00dea6c4ffae4e387799c680d1"
+      "blob": "blobs/b5d8b57a75425345b22427ccb0c57b3d62e3de53c875a4ac15c73f3b60cd8ee8"
     },
     "docs/process/subagent-collaboration.md": {
       "type": "file",
@@ -28655,9 +28655,9 @@
     },
     "scripts/fixtures/strategic-handoff/fixture.mjs": {
       "type": "file",
-      "digest": "abea87466c484f92a8879f859f143b21996ee76a671c4a581fd2cbcfbc967664",
+      "digest": "a455b3d0e075159be261171511fc9b17a679e9ca5b5960e11614f8435a369073",
       "mode": 420,
-      "blob": "blobs/abea87466c484f92a8879f859f143b21996ee76a671c4a581fd2cbcfbc967664"
+      "blob": "blobs/a455b3d0e075159be261171511fc9b17a679e9ca5b5960e11614f8435a369073"
     },
     "scripts/fixtures/strategic-handoff/source-roles.json": {
       "type": "file",
@@ -28871,9 +28871,15 @@
     },
     "scripts/lib/strategic-handoff-consumption.mjs": {
       "type": "file",
-      "digest": "13eeca2ab79f398c97d8e8b24df2015278fe736c94542a8712b62a6d6d4c9c35",
+      "digest": "891ff89d811289f517d8f703c455015abe4fe22daf97ff53237597e8e7778f71",
       "mode": 420,
-      "blob": "blobs/13eeca2ab79f398c97d8e8b24df2015278fe736c94542a8712b62a6d6d4c9c35"
+      "blob": "blobs/891ff89d811289f517d8f703c455015abe4fe22daf97ff53237597e8e7778f71"
+    },
+    "scripts/lib/strategic-handoff-design-targets.mjs": {
+      "type": "file",
+      "digest": "0c8e8ab4c19ddecd36c3b598a20dad50fbcf73ee6cc1318e59a484ff41e65198",
+      "mode": 420,
+      "blob": "blobs/0c8e8ab4c19ddecd36c3b598a20dad50fbcf73ee6cc1318e59a484ff41e65198"
     },
     "scripts/lib/strategic-handoff-io.mjs": {
       "type": "file",
@@ -29225,9 +29231,9 @@
     },
     "scripts/verify-strategic-handoff-package-scenarios": {
       "type": "file",
-      "digest": "db2eaeef1fe8db0228f533b4eac75c201c0a590c1931c5bed22a6db95fe21639",
+      "digest": "2e5103f86c10e7f49286ac93c95cfea73a3efc785a8c21c1ad74d486a982d86a",
       "mode": 493,
-      "blob": "blobs/db2eaeef1fe8db0228f533b4eac75c201c0a590c1931c5bed22a6db95fe21639"
+      "blob": "blobs/2e5103f86c10e7f49286ac93c95cfea73a3efc785a8c21c1ad74d486a982d86a"
     },
     "scripts/verify-subagent-task-package": {
       "type": "file",
@@ -29297,9 +29303,9 @@
     },
     "skills-lock.json": {
       "type": "file",
-      "digest": "ba334a1e1b042464a95939deb5a4beed5ca9a922bb59d0d2f0cbfa9db85a669f",
+      "digest": "db256c383640830cc3b877428b6dd7c76268bc0a5dc7690c61efc4c10f9d0a20",
       "mode": 420,
-      "blob": "blobs/ba334a1e1b042464a95939deb5a4beed5ca9a922bb59d0d2f0cbfa9db85a669f"
+      "blob": "blobs/db256c383640830cc3b877428b6dd7c76268bc0a5dc7690c61efc4c10f9d0a20"
     },
     "yss-project.yaml": {
       "type": "file",
@@ -29308,7 +29314,7 @@
       "blob": "blobs/dae2ddacbb024ba25b70a18830fc26ab7d3dcd8aaa361cc8b3767d68307f98af"
     }
   },
-  "snapshotHash": "006d9ed96ab2cc014be2ef6b6895c9b144e2f06326ed6a92acedd79d6dc6dd7d",
+  "snapshotHash": "09bfcc465ebb9ad43fa6017b6347d59bbfef9c46b2a83f31bd1c34583f6d5aa5",
   "projectionRepresentation": "materialized-files",
   "pathEncoding": "sha256-blobs-v1"
 }

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "sourceRepository": "https://github.com/iloveZzz/yss-spec-project-template.git",
-  "sourceRevision": "3df77c3bba87252d2751e499ee0a4c8a0bab948d",
+  "sourceRevision": "1e2437e05ac9cd6b433fa51e39e60009487ed2c8",
   "sourcePath": ".template-source/cli-core",
-  "coreVersion": "0.1.0",
+  "coreVersion": "0.1.1",
   "protocolVersion": 1,
   "files": {
     "build.mjs": {
@@ -19,7 +19,7 @@
       "mode": 420
     },
     "engine.mjs": {
-      "digest": "2610e0e94d52f68e03d0e5271c771f772d9dea7b8a4ceef8876af835149b68d3",
+      "digest": "b39f8e259909135928154de6ccac93ea35ebc8a8fd496f7d43ae46d05fadbd37",
       "mode": 420
     },
     "identity.mjs": {
@@ -31,7 +31,7 @@
       "mode": 420
     },
     "package.json": {
-      "digest": "ab59c62d66c302d535a6e3754766391d4e40280fc893bab6c0a473b6f6417381",
+      "digest": "f08f12f5a1f084fde7d141d69bce7e20e1268b42cb30a45b942e5efd55d30711",
       "mode": 420
     },
     "scaffold.mjs": {
@@ -39,7 +39,7 @@
       "mode": 420
     },
     "tests/cli.test.mjs": {
-      "digest": "d258d33a6151e1ac33c374fa6b0b343fef6685aefc9d0daed0f51ec5cfd51d9f",
+      "digest": "647243c8824bcd8d9fc8a8118ac502e3c12c8e824aa03e4914467df197754f64",
       "mode": 420
     },
     "transaction.mjs": {
@@ -63,5 +63,5 @@
       "mode": 420
     }
   },
-  "digest": "03278c7c1489065c9462672d6d5add9d7fa338f7a373708df0c9f4939ebe6a4d"
+  "digest": "ccce411f4c8ccad1416de6c29ee9e388ad4fb6988284017d99d69de27bdadaa7"
 }
