@@ -2,7 +2,7 @@
 
 创建、接入和同步 `harness.frontend-delivery` 的治理资产。CLI 包内包含固定模板与公共核心，init / attach / sync 离线运行。不会生成业务运行时代码。
 
-`0.1.0` 是首版候选；npm 发布状态以 registry 为准。本地验收可用 `npm pack` 后的 tgz 安装。
+`0.1.1` 更新专职模板技能分发与跨端执行边界；npm 发布状态以 registry 为准。本地验收可用 `npm pack` 后的 tgz 安装。
 
 ```sh
 npx create-yss-harness-frontend@latest init --target-dir ./my-project --project-name 我的项目

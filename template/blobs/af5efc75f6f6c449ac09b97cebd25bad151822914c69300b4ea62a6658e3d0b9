@@ -1,0 +1,101 @@
+schema_version: 1
+profile_id: harness.frontend-delivery
+status: active
+name: 前端专职交付 Harness
+purpose: 联合接收批准战略与后端交付，形成前端工程计划和合同，完成实现、视觉交互验证及前端验收。
+audience:
+  target_user_roles:
+  - role.architecture-agent
+  - role.frontend-agent
+  - role.test-agent
+  control_plane_roles:
+  - role.harness-orchestrator
+  non_target_role_policy: 另一端角色只允许无写路径的只读输入评审；不得派发另一端实现或起草任务。共享角色表保留来源批准身份。
+  boundary: 职责按业务切片接力；后端交付、前端验收和统一管理方业务验收分别记录。上游规则及 API 变化回交权威方，不在本仓静默重定义。
+lifecycle:
+  repository_modes:
+  - project-instance
+  entry_work_unit: work-unit.harness-entry
+  allowed_work_units:
+  - work-unit.harness-entry
+  - work-unit.frontend-engineering-design
+  - work-unit.slice-contract
+  - work-unit.slice-implementation
+  - work-unit.verification
+  terminal_work_unit: work-unit.verification
+  terminal_stage: stage.verification
+  forbidden_work_units:
+  - work-unit.ssot-update
+  - work-unit.skill-projection-sync
+  - work-unit.intensity-aware-verification
+  - work-unit.intensity-aware-review
+  - work-unit.release-and-rollback
+upstream:
+  kind: approved-spec-or-strategic-design
+  default_entry: work-unit.harness-entry
+  discovery_is_default: false
+  strategic_design_handoff:
+    schema_ref: docs/process/schemas/strategic-design-handoff.schema.json
+    required_schema_version: 3
+    ui_impact_requires_visual_baseline_schema_version: 1
+    stale_baseline_policy: block-and-reroute
+  compatibility_skills:
+  - grill-with-docs
+  - to-spec
+  - to-tickets
+instantiation:
+  cli_package: create-yss-harness-frontend
+  npm_create: npm create yss-harness-frontend@latest
+  metadata_file: .yss-harness-frontend.json
+  foreign_metadata_files:
+  - .yss-template.json
+  - .yss-harness-dev.json
+  - .yss-harness-backend.json
+  template_source: github:iloveZzz/yss-harness-frontend-agent
+  distribution_manifest: .template-source/distribution/template.manifest.json
+  pin_env: YSS_HARNESS_TEMPLATE_REF
+  command: npx create-yss-harness-frontend@latest init --target-dir <directory>
+execution:
+  side: frontend
+  terminal_conclusion: frontend-accepted
+  business_acceptance_owner: registered-coordinating-project
+frontend_delivery:
+  required: true
+  contract_ref: docs/process/frontend-backend-delivery.md
+  verifier: scripts/verify-frontend-delivery
+  recheck:
+  - start
+  - resume
+  - compile
+  - implementation
+  - verification
+  inputs_verified_allows: plan-and-contract-preparation
+  implementation_requires: approved-current-slice-contract-and-existing-readiness
+skill_scope:
+  policy: local-workflow-only
+  retired_local_skills:
+  - alibaba-java-code-style
+  - backend-agent
+  - java-backend-commit
+  - lombok
+  - mapstruct
+  - yss-application
+  - yss-audit-log
+  - yss-cache
+  - yss-ddd-scaffold-generator
+  - yss-distributed-id
+  - yss-domain
+  - yss-dto
+  - yss-excel-mvc
+  - yss-exception
+  - yss-layered-mvc-scaffold-generator
+  - yss-mvc-data-analysis-project-initializer
+  - yss-mybatis
+  - yss-repository
+  - yss-resilience4j
+  - yss-security-algorithm
+  - yss-tactical-design
+  - yss-up-springboot3
+  - yss-userinfo
+  - yss-validation
+  - yss-web-controller
