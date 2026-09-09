@@ -6,7 +6,7 @@
   "metadataFile": ".yss-harness-frontend.json",
   "templateName": "yss-harness-frontend-agent",
   "templateSource": "github:iloveZzz/yss-harness-frontend-agent",
-  "templateCommit": "be68fb715d637d7a562ad3538ea5ac25395d73f3",
+  "templateCommit": "dbede16398a4d92ee33723879058e2ec3e12e130",
   "manifestHash": "fadcf0090ba516d78f4d9291470c3e93b61aef1dc1769fb29ac419f91eb4ef1d",
   "files": {
     ".agents/rules/yss-ai-skills.md": {
@@ -28661,9 +28661,9 @@
     },
     "scripts/fixtures/strategic-handoff/source-roles.json": {
       "type": "file",
-      "digest": "2bd7075372dee051e2e5c65065a365fb61eef97eaee202287fc66e26ed06e39f",
+      "digest": "1f15600d765b0d316b7cc1b7ffeed929b694e1b718bea04bb016dd1855f1d396",
       "mode": 420,
-      "blob": "blobs/2bd7075372dee051e2e5c65065a365fb61eef97eaee202287fc66e26ed06e39f"
+      "blob": "blobs/1f15600d765b0d316b7cc1b7ffeed929b694e1b718bea04bb016dd1855f1d396"
     },
     "scripts/generate-lifecycle-artifacts": {
       "type": "file",
@@ -28703,15 +28703,27 @@
     },
     "scripts/lib/backend-delivery.mjs": {
       "type": "file",
-      "digest": "5d9a87eb7a9f23c7e0c8667165895648b45af97779b5f8a667cd654cf5ad1def",
+      "digest": "94cecc2cca6f83216857d0fef6f00ec8157d42f1f86df432d2b16c8cffc1374a",
       "mode": 420,
-      "blob": "blobs/5d9a87eb7a9f23c7e0c8667165895648b45af97779b5f8a667cd654cf5ad1def"
+      "blob": "blobs/94cecc2cca6f83216857d0fef6f00ec8157d42f1f86df432d2b16c8cffc1374a"
+    },
+    "scripts/lib/command-runner.mjs": {
+      "type": "file",
+      "digest": "4fb7f3c9ca26dff3f955ddb1c6ad545519d3e55af179f834ff67b1c0bf20bffd",
+      "mode": 420,
+      "blob": "blobs/4fb7f3c9ca26dff3f955ddb1c6ad545519d3e55af179f834ff67b1c0bf20bffd"
     },
     "scripts/lib/context-contract.mjs": {
       "type": "file",
       "digest": "f62802f3c7f256a89adb0808aea068bcb06a2e92bcd02f2f9b9da7e71bf06f22",
       "mode": 420,
       "blob": "blobs/f62802f3c7f256a89adb0808aea068bcb06a2e92bcd02f2f9b9da7e71bf06f22"
+    },
+    "scripts/lib/context-reconciliation.mjs": {
+      "type": "file",
+      "digest": "0a212410b3bfe7a0c881ad05bfa64629fa36bf6c2d2fa6fd3d844f1f22770997",
+      "mode": 420,
+      "blob": "blobs/0a212410b3bfe7a0c881ad05bfa64629fa36bf6c2d2fa6fd3d844f1f22770997"
     },
     "scripts/lib/digital-human-roles.mjs": {
       "type": "file",
@@ -28793,9 +28805,9 @@
     },
     "scripts/lib/json-schema.mjs": {
       "type": "file",
-      "digest": "1bbf66d7ab508d5ee340cdbc824199563ac100ac609759fef902ed843c3071a4",
+      "digest": "578b253e03267ecfbc0dcefa81f5c44892f73ac753cc126ebb385d8b73726771",
       "mode": 420,
-      "blob": "blobs/1bbf66d7ab508d5ee340cdbc824199563ac100ac609759fef902ed843c3071a4"
+      "blob": "blobs/578b253e03267ecfbc0dcefa81f5c44892f73ac753cc126ebb385d8b73726771"
     },
     "scripts/lib/lifecycle-registry.mjs": {
       "type": "file",
@@ -28865,9 +28877,9 @@
     },
     "scripts/lib/skill-supply-chain.mjs": {
       "type": "file",
-      "digest": "1f30a39bd9d85e24f58ba214679254d90e30b649daf549433df643a74c774c32",
+      "digest": "8502c8c2ee3e3f69727afd585da2dd870487595f75307e8e905a2760a320e415",
       "mode": 420,
-      "blob": "blobs/1f30a39bd9d85e24f58ba214679254d90e30b649daf549433df643a74c774c32"
+      "blob": "blobs/8502c8c2ee3e3f69727afd585da2dd870487595f75307e8e905a2760a320e415"
     },
     "scripts/lib/strategic-handoff-consumption.mjs": {
       "type": "file",
@@ -28883,9 +28895,9 @@
     },
     "scripts/lib/strategic-handoff-io.mjs": {
       "type": "file",
-      "digest": "4e66c4b87045a09df882e6162d912b5fa574f134b084c1123466e19476dbbf7b",
+      "digest": "9eb884abf27641c7eb7a101308d55c54f6e30d0fbe54b0d28938c7225e00c0a2",
       "mode": 420,
-      "blob": "blobs/4e66c4b87045a09df882e6162d912b5fa574f134b084c1123466e19476dbbf7b"
+      "blob": "blobs/9eb884abf27641c7eb7a101308d55c54f6e30d0fbe54b0d28938c7225e00c0a2"
     },
     "scripts/lib/strategic-handoff-rules.mjs": {
       "type": "file",
@@ -28901,9 +28913,9 @@
     },
     "scripts/lib/strategic-handoff.mjs": {
       "type": "file",
-      "digest": "0ad17cbfa50ffa3d0348303d4e9d8c3533df72b406fe905506839aaa10d0529b",
+      "digest": "c14fa4164b222fd081da51c8c877b0c43f469736003fe9c7005d0311944b56b6",
       "mode": 420,
-      "blob": "blobs/0ad17cbfa50ffa3d0348303d4e9d8c3533df72b406fe905506839aaa10d0529b"
+      "blob": "blobs/c14fa4164b222fd081da51c8c877b0c43f469736003fe9c7005d0311944b56b6"
     },
     "scripts/lib/task-package-schema.mjs": {
       "type": "file",
@@ -28949,9 +28961,9 @@
     },
     "scripts/run-template-verification": {
       "type": "file",
-      "digest": "b39ba134d72b363285b9e4ad0ac3f7de0d44cd0d0d571ccd350d5a04a31492a0",
+      "digest": "bb595f0b998dd8e425f3cad1beee628cf8d21359f6358c46ce0711f11dd5ae90",
       "mode": 493,
-      "blob": "blobs/b39ba134d72b363285b9e4ad0ac3f7de0d44cd0d0d571ccd350d5a04a31492a0"
+      "blob": "blobs/bb595f0b998dd8e425f3cad1beee628cf8d21359f6358c46ce0711f11dd5ae90"
     },
     "scripts/strategic-handoff": {
       "type": "file",
@@ -29009,9 +29021,9 @@
     },
     "scripts/verify-context-reconciliation": {
       "type": "file",
-      "digest": "114c6d7b7523bc080b737561db3ca0310e4c3fc579a44695860f6f74d213f8b7",
-      "mode": 420,
-      "blob": "blobs/114c6d7b7523bc080b737561db3ca0310e4c3fc579a44695860f6f74d213f8b7"
+      "digest": "b3831a29df28bdeb225e5c52619972cb238759c3bc7539dbdf15b220377dfc65",
+      "mode": 493,
+      "blob": "blobs/b3831a29df28bdeb225e5c52619972cb238759c3bc7539dbdf15b220377dfc65"
     },
     "scripts/verify-digital-human-roles": {
       "type": "file",
@@ -29314,7 +29326,7 @@
       "blob": "blobs/dae2ddacbb024ba25b70a18830fc26ab7d3dcd8aaa361cc8b3767d68307f98af"
     }
   },
-  "snapshotHash": "09bfcc465ebb9ad43fa6017b6347d59bbfef9c46b2a83f31bd1c34583f6d5aa5",
+  "snapshotHash": "d2fa09e59da070e9efa4d3f1153c6da202d7d8f1f75574e509ed26e9518501dc",
   "projectionRepresentation": "materialized-files",
   "pathEncoding": "sha256-blobs-v1"
 }

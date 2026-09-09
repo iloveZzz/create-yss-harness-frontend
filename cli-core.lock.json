@@ -1,21 +1,25 @@
 {
   "schemaVersion": 1,
   "sourceRepository": "https://github.com/iloveZzz/yss-spec-project-template.git",
-  "sourceRevision": "1e2437e05ac9cd6b433fa51e39e60009487ed2c8",
+  "sourceRevision": "882cd4639bc3fcc9d511987a400ff099f194e1a4",
   "sourcePath": ".template-source/cli-core",
   "coreVersion": "0.1.1",
   "protocolVersion": 1,
   "files": {
     "build.mjs": {
-      "digest": "c36aac74b154d63d737c530dd45ae9d16781ebc61b66588dc1b380192d49f6a4",
+      "digest": "64082a3b39660fff40dfa252a06dedad65fcc3fdef63473b484068a5a7849c4f",
       "mode": 420
     },
     "bundle.mjs": {
-      "digest": "e3590656ee15a107ab383a20e08a6e6e1b774d4dbc3d19aee159e8ed9329c6f7",
+      "digest": "0d8cf55ff78b3f58df6e7215753eb49c0d8907fa38f797cd8258fc5df6c6e3cc",
       "mode": 420
     },
     "cli.mjs": {
       "digest": "477b1af17e538328e28c1093104f9bda6797ce68f2edc635b94033bdec34b77b",
+      "mode": 420
+    },
+    "command-runner.mjs": {
+      "digest": "4fb7f3c9ca26dff3f955ddb1c6ad545519d3e55af179f834ff67b1c0bf20bffd",
       "mode": 420
     },
     "engine.mjs": {
@@ -39,15 +43,15 @@
       "mode": 420
     },
     "tests/cli.test.mjs": {
-      "digest": "647243c8824bcd8d9fc8a8118ac502e3c12c8e824aa03e4914467df197754f64",
+      "digest": "46e886c3670def1ee251cda026205275260102e8edea03b45d2c7cac73caa319",
       "mode": 420
     },
     "transaction.mjs": {
-      "digest": "38dff12fe6fe43fecf2b4243f9e65f04e42f81bcaccc44bc224df9704ce542b8",
+      "digest": "6a27d7d9bbaa97ab69ed4b643c0c61b87a0738cf23871a1cfa55f7b5603f5d26",
       "mode": 420
     },
     "update.mjs": {
-      "digest": "2f75905eb13a3a41d50dbb0d54c50c5303c84a468fcb4e98fd420588521d0cef",
+      "digest": "11b9862fe60fcb693504d136567cce36e33a9b5cca3321938429769a02a5d3b3",
       "mode": 420
     },
     "vendor/NOTICES.md": {
@@ -63,5 +67,5 @@
       "mode": 420
     }
   },
-  "digest": "ccce411f4c8ccad1416de6c29ee9e388ad4fb6988284017d99d69de27bdadaa7"
+  "digest": "ebf6885292f2060d7d75020eb624bacc2f0fbb859eeab3fa69287b1b98d35306"
 }
