@@ -1,0 +1,14 @@
+schema_version: 1
+gate_id: gate.fresh-verification-passed
+decision: approved
+actor_kind: digital-human
+role_id: role.architecture-agent
+runtime_id: runtime.generic
+runtime_instance_ref: "runtime.generic:role.architecture-agent"
+principal_ref: "instance:role.architecture-agent"
+drafter_role_id: role.test-agent
+countersigner_role_ids:
+  - role.architecture-agent
+evidence_refs: []
+biological_veto: false
+notes: 会签必须可读取；起草者不得出现在 countersigner_role_ids。运行时表情/reaction 无效。合并门禁必须由生物人关闭。

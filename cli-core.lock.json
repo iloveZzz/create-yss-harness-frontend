@@ -1,17 +1,18 @@
 {
   "schemaVersion": 1,
   "sourceRepository": "https://github.com/iloveZzz/yss-spec-project-template.git",
-  "sourceRevision": "882cd4639bc3fcc9d511987a400ff099f194e1a4",
+  "sourceRevision": "857265c065d48198aaa2a8bcece22da5885daf7b",
+  "sourceState": "committed",
   "sourcePath": ".template-source/cli-core",
-  "coreVersion": "0.1.1",
+  "coreVersion": "0.1.2",
   "protocolVersion": 1,
   "files": {
     "build.mjs": {
-      "digest": "64082a3b39660fff40dfa252a06dedad65fcc3fdef63473b484068a5a7849c4f",
+      "digest": "cc7d9e5809c2970e058840a2c42889a889e99dc45736039707bf292e2d76b322",
       "mode": 420
     },
     "bundle.mjs": {
-      "digest": "0d8cf55ff78b3f58df6e7215753eb49c0d8907fa38f797cd8258fc5df6c6e3cc",
+      "digest": "2a1cf876567f2a620f1bc45f53ea7eee87eac8ca3c749d9abdbd3c0111804354",
       "mode": 420
     },
     "cli.mjs": {
@@ -23,11 +24,11 @@
       "mode": 420
     },
     "engine.mjs": {
-      "digest": "b39f8e259909135928154de6ccac93ea35ebc8a8fd496f7d43ae46d05fadbd37",
+      "digest": "20511a35e76f0512d12f1eaa4dfc41c53358414e715b6e00944e8886cba0faa9",
       "mode": 420
     },
     "identity.mjs": {
-      "digest": "b06d9d1959b94b3df393c5446637e5c84f3566237ca5ef538e4321d758abb363",
+      "digest": "4b922d1a3ecbb5e84ca956715bc919e3e4fe0ebe6728229c3976de46b895da4d",
       "mode": 420
     },
     "io.mjs": {
@@ -35,15 +36,15 @@
       "mode": 420
     },
     "package.json": {
-      "digest": "f08f12f5a1f084fde7d141d69bce7e20e1268b42cb30a45b942e5efd55d30711",
+      "digest": "3f46bc453a90c967e5226e1986fa31710b25da2250f94879ea89139e20431423",
       "mode": 420
     },
     "scaffold.mjs": {
-      "digest": "b5562bd121cc85103dfe43fcfcd7413c48cdcbc402bbca016bdd7ba354c39bf4",
+      "digest": "4ad5df8c0aa9c776ed39fff7193d2833ff61f29068e2a31bf64e8dadb80d41db",
       "mode": 420
     },
     "tests/cli.test.mjs": {
-      "digest": "46e886c3670def1ee251cda026205275260102e8edea03b45d2c7cac73caa319",
+      "digest": "fd800d3f9d361a28809e37fba505bd6f8970616531fd1fd6096995844e724093",
       "mode": 420
     },
     "transaction.mjs": {
@@ -67,5 +68,5 @@
       "mode": 420
     }
   },
-  "digest": "ebf6885292f2060d7d75020eb624bacc2f0fbb859eeab3fa69287b1b98d35306"
+  "digest": "f513120a47f0a9f9597a883f89575cb26c354696fdb2ce784fe50a72ae76f557"
 }

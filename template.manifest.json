@@ -56,7 +56,8 @@
     "docs/.scratch",
     "docs/reviews",
     "docs/adr",
-    "scripts/instantiate-harness"
+    "scripts/instantiate-harness",
+    "scripts/verify-strategic-handoff-tools-lock"
   ],
   "renderPaths": [
     "README.md",
