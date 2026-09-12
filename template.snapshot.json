@@ -6,7 +6,7 @@
   "metadataFile": ".yss-harness-frontend.json",
   "templateName": "yss-harness-frontend-agent",
   "templateSource": "github:iloveZzz/yss-harness-frontend-agent",
-  "templateCommit": "86311eaf37bec067b16cf7c83179c36e34f7a8fd",
+  "templateCommit": "830972095569513b164bb80a9c7295a8fc1c8017",
   "sourceState": "committed",
   "manifestHash": "7d62d8123b4fb6eee545a4fefbadce975da26ffb047ef646e660a7af9f11d872",
   "files": {
@@ -28854,9 +28854,9 @@
     },
     "scripts/lib/strategic-handoff-design-targets.mjs": {
       "type": "file",
-      "digest": "28f7efa639c8be66503c0a566efa1ec8b85263502b49764210a17656fc70fd0d",
+      "digest": "7535dc763c606d36a9b02ce78bff2c49b53e196a2621245ace357d1300060a37",
       "mode": 420,
-      "blob": "blobs/28f7efa639c8be66503c0a566efa1ec8b85263502b49764210a17656fc70fd0d"
+      "blob": "blobs/7535dc763c606d36a9b02ce78bff2c49b53e196a2621245ace357d1300060a37"
     },
     "scripts/lib/strategic-handoff-io.mjs": {
       "type": "file",
@@ -29422,10 +29422,15 @@
       "type": "file",
       "digest": "36570e9d8289ccac4d7f60f4b37b5f5aa7d062472699ae2ac26a9c5b98da260f",
       "mode": 420
+    },
+    "scripts/lib/strategic-handoff-design-targets.mjs": {
+      "type": "file",
+      "digest": "28f7efa639c8be66503c0a566efa1ec8b85263502b49764210a17656fc70fd0d",
+      "mode": 420
     }
   },
-  "transitionBaselinesHash": "fe22c919aadb96f168629071f8335e67879b6706b56d0b5684d0387f8c28ee85",
-  "snapshotHash": "e49adab187dbaebcd2f88daff7385127d4407d9b3b4cc5dd6fde4a7003a2407d",
+  "transitionBaselinesHash": "49ace5d264690ffab138fe4f53d299d52d22bd05881f51f91be43890c2113bed",
+  "snapshotHash": "0c1339414479e570371a551f9b94a0d0ec287b1339b805f73ae6df23f9776e02",
   "projectionRepresentation": "materialized-files",
   "pathEncoding": "sha256-blobs-v1"
 }
