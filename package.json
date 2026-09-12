@@ -1,6 +1,6 @@
 {
   "name": "create-yss-harness-frontend",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "创建和同步 YSS frontend 专职 Harness 治理项目",
   "type": "module",
   "license": "UNLICENSED",
@@ -29,6 +29,7 @@
     "sync-template": "node scripts/sync-template.mjs",
     "verify-bundle": "node scripts/verify-bundle.mjs",
     "test": "node --test tests/*.test.mjs",
+    "test:prepared": "node --test tests/*.test.mjs",
     "prepack": "node scripts/verify-bundle.mjs"
   }
 }

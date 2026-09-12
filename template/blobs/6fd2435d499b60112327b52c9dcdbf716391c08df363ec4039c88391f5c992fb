@@ -1,0 +1,73 @@
+# 前端子项目用户手册
+
+本手册面向前端负责人和交付协调者。当前 profile 是 `harness.frontend-delivery`：联合接收批准战略、Backend Delivery、冻结 API、真实服务与 UI 依据，完成前端工程设计、实现和 Frontend Acceptance；不修改后端代码或补造业务规则。
+
+## 创建或接管项目
+
+```sh
+npm view create-yss-harness-frontend version
+npx create-yss-harness-frontend@latest init --target-dir ./frontend-project --project-name 设备借用 --business-domain 内部设备管理
+npx create-yss-harness-frontend@latest attach --target-dir ./existing-project
+npx create-yss-harness-frontend@latest attach --target-dir ./existing-project --apply
+```
+
+init 只接受不存在或空目录。attach 和 sync 默认预览，必须带 `--apply` 才写入。生成后核对 `yss-project.yaml`、`.yss-harness-frontend.json`、根 `CONTEXT.md`、profile 和前端实现仓登记；CLI 详情见[CLI 使用说明](CLI使用说明.md)。
+
+## 第一次让 Agent 工作
+
+```text
+请先只读检查本仓身份、根 CONTEXT.md、profile、战略包、后端交付、冻结 API、UI 依据和真实服务版本。
+说明当前可信阶段、输入关系、缺失证据和下一步。
+输入不全时只诊断并回交；当前 Slice Contract 获准前不要写前端或后端代码。
+```
+
+包导入、`inputs-verified` 或一张截图都不是实现批准。业务规则冲突回交战略方，接口、部署和测试数据缺口回交后端，不能在前端仓重新定义。
+
+## 本仓操作主线
+
+`验包与诊断 → 目标词汇与场景对账 → UI / API / 真实服务联合接收 → 前端工程设计 → 计划与合同批准 → 实现与独立验收`
+
+1. 导入 Backend Delivery；随交付链分别复验战略包和后端包，读取接收草稿。
+2. 完成目标 `CONTEXT.md` 对账，把源规则、场景、operation ID、页面状态和错误恢复逐项映射。
+3. Handoff v5 必须明确 UI 分支：有 UI 变化使用批准原型；无 UI 变化的既有工程使用 `existing-ui-baseline`；确实无 UI 影响时记录有理由的 `not-applicable`。
+4. `existing-ui-baseline` 绑定固定源码、锁文件、构建、浏览器动作、截图和实际 API 交换。任一源码、构建、OpenAPI 或捕获内容变化后重新建立并批准基线。
+5. 运行 accept 只读预检和 `verify-frontend-delivery`，核对真实服务身份、部署、接口、构建与测试数据。成功仍固定为 `ready_for_agent: false`。
+6. 形成 `frontend_implementation_plan` 和当前 Slice Contract，取得适用批准后再实现。
+7. 在登记前端工程用 pnpm 执行测试、type-check 和构建，保存截图、视觉对比、状态交互、console warning、失败恢复及真实联调证据，交独立 Reviewer 验收。
+
+## 接收预检与验证
+
+```sh
+node scripts/backend-delivery import --bundle <后端交付目录或ZIP> --target-root .
+node scripts/preflight-delivery --input <前端接收预检输入.json> --stage accept --json
+node scripts/verify-frontend-delivery --root . --slice <切片ID> <接收记录相对路径>
+```
+
+预检只读取当前原始资产，不启动服务或执行证据中的命令。Backend Delivery、Frontend Strategic Preflight 与 Frontend Delivery Acceptance 必须使用与 Handoff 版本匹配的协议；Handoff v5 使用 Strategic Preflight v2 和 Acceptance v3。
+
+真实服务不可达、operation ID 不匹配、部署或后端包版本漂移时保持阻塞。UI-only 路线只有在战略路由明确 `backend-not-applicable` 且 operation IDs 为空时成立。
+
+## 用户决定与完成标准
+
+用户或对应负责人需要确认页面任务、状态和恢复、UI 基线、前端实现计划、Slice 写入范围及验收风险。批准绑定当前资产；战略、API、服务、UI 基线或合同变化后重新验证受影响输入。
+
+本仓完成时应同时满足：
+
+- 战略、后端、API、数据、服务和 UI 输入已联合接收，无未裁决冲突。
+- 前端计划和 Slice Contract 当前且已批准。
+- pnpm 实际命令、截图、状态交互、console 和失败恢复证据齐全。
+- Frontend Acceptance 绑定同一战略、后端、服务和前端版本并通过独立审查。
+- 结论只写 `frontend-accepted`；整体业务完成仍由统一管理方裁决。
+
+## 同步与恢复
+
+```sh
+npx create-yss-harness-frontend@latest sync --target-dir . --plan --prune
+npx create-yss-harness-frontend@latest sync --target-dir . --apply --prune
+npx create-yss-harness-frontend@latest recover --target-dir .
+npx create-yss-harness-frontend@latest recover --target-dir . --apply
+```
+
+同家族 metadata v2 实例使用 sync；旧 repository-local 实例和其他家族不自动转换。`--prune` 只删除未被用户修改的退出分发文件。中断事务恢复后必须重新预览，成功事务的撤销使用保存的 Git 基线或备份。
+
+职责案例见[设备借用案例](设备借用贯穿案例.md)，阶段导航见[本仓工作流](产品生命周期工作流.md)。

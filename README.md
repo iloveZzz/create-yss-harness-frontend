@@ -1,28 +1,52 @@
 # create-yss-harness-frontend
 
-创建、接入和同步 `harness.frontend-delivery` 的治理资产。CLI 包内包含固定模板与公共核心，init / attach / sync 离线运行。不会生成业务运行时代码。
+候选版本 **0.2.0**，共享内核 **0.2.0**。创建、接入和同步本家族治理资产，模板与内核均随包分发，实例操作离线运行。来源 commit、摘要及 `committed` / `working-tree` 状态分别记录在模板快照和内核锁中；开发候选不表示已发布 npm。
 
-源码候选版本：`0.1.4`。本版同步 Handoff v4、Frontend Strategic Preflight 与真实后端版本接收边界；npm 发布状态以 registry 为准。本地验收可用 `npm pack` 后的 tgz 安装。
+## 命令
 
 ```sh
-npx create-yss-harness-frontend@latest init --target-dir ./my-project --project-name 我的项目
-npx create-yss-harness-frontend@latest attach --target-dir ./existing-project
-npx create-yss-harness-frontend@latest attach --target-dir ./existing-project --apply
-npx create-yss-harness-frontend@latest sync --target-dir ./my-project
-npx create-yss-harness-frontend@latest sync --target-dir ./my-project --apply
+create-yss-harness-frontend init --target-dir ./new-project --project-name 我的项目 --business-domain 业务领域
+create-yss-harness-frontend attach --target-dir ./existing-project
+create-yss-harness-frontend attach --target-dir ./existing-project --apply
+create-yss-harness-frontend doctor --target-dir ./new-project --json
+create-yss-harness-frontend diff --target-dir ./new-project --json
+create-yss-harness-frontend sync --target-dir ./new-project --plan --prune
+create-yss-harness-frontend sync --target-dir ./new-project --apply --prune
+create-yss-harness-frontend recover --target-dir ./new-project
+create-yss-harness-frontend recover --target-dir ./new-project --apply
 create-yss-harness-frontend update --dry-run
 ```
 
-init 只接受不存在或空目录；`--dry-run` 不写入。attach / sync 默认预览，写入要求 `--apply`。治理冲突整次暂停，确认备份覆盖后可用 `--apply --force`。业务源码、构建文件、Git、子模块与越界路径不能强制接管。
+init 只接受不存在或空目录；已有项目使用 attach。attach/sync 默认预览，`--apply` 才写入。diff、doctor 和 recover 默认只读，不生成 metadata、技能锁、Git 或状态目录。recover 仅恢复未完成事务，不提供成功事务的历史 rollback。update/upgrade 仅更新程序，不同步实例；源码、npx 和未知安装方式输出指引，不自动降级。
 
-仓内旧脚本生成的实例不受支持，不转换旧 metadata 或重建基线；其他 Harness 家族同样拒绝。已有新版实例使用 sync。
+`--plan` 适用于 attach/sync；`--prune` 仅适用于 sync。`--plan`、`--dry-run` 与 `--apply` 互斥。`--json` 只控制格式，stdout 为一个 schemaVersion 1 JSON 对象，日志走 stderr。普通差异与警告退出码 0；冲突、非法参数、身份错误、校验失败及无法恢复退出码 1。错误返回 code/message，计划含 changes、conflicts、summary、prunable、pruned、retainedRemoved。doctor 返回逐项 checks 和处理建议。
 
-参数：`--project-name`、`--business-domain`、`--team-size`、`--issue-tracker local-markdown|github|gitlab`、`--git-init`（仅 init）、`--include-example-docs` / `--no-example-docs`、`--json`。程序升级命令 `update` / `upgrade` 只更新 CLI；npx、源码或未知安装方式输出安装指引。
+初始化参数包括 `--project-name`、`--business-domain`、`--team-size`、`--issue-tracker local-markdown|github|gitlab`、`--git-init` 和示例文档开关。init 缺少必需参数时仅在 TTY 进入交互；JSON 或非交互环境缺参直接报错。sync 不接受重新设置项目变量的参数。
 
-每次应用保存 `.yss-harness-state/frontend/transactions/<id>/journal.json` 和原文件备份。失败自动恢复；进程中断时预览只诊断，下次 `--apply` 先恢复，再重新执行计划。恢复遇到后续修改会停下并保留恢复清单。成功后也保留备份，首版无独立 rollback 命令。状态目录应由项目自行排除 Git；CLI 不改已有 Git 配置。
+## 文件与恢复
 
-JSON 协议版本 1：成功返回 `preview`、`applied`、`recovered`；错误退出码 1，含 `code` / `message`，冲突含完整 `changes` / `conflicts`。存在普通可应用更新的预览退出码为 0。
+已有 README、`CONTEXT.md` 与前端业务资产保留。README 不持续受管；`.gitignore` 仅更新家族专属区块并保留区块外字节，区块排除 `.yss-harness-state/`。不完整或重复标记阻断同步。
 
-维护：先固定综合模板 core 与专职模板提交，运行 `pnpm sync-core <source-repo> <commit>` 和 `pnpm sync-template <source-repo> <commit>`，加 `--check` 只核验。`pnpm test` 完成后依次 `pnpm verify-bundle`、`npm pack` 和干净目录安装验收。来源锁和 blob 编码随包携带；不要手改生成文件。
+普通 sync 保留退出分发文件及基线。`--prune --apply` 仅删除旧所有权可信、当前内容和 mode 与基线一致的可清理文件；本地修改、用户文件及证据不足的文件保留并报告。force 不放宽删除条件。项目新增技能必须显式登记，不自动接管未知技能。
 
-公共核心 `0.1.2` 在 sync / attach 中保留已有 `CONTEXT.md`，包括 `--force`；缺失时才初始化，并记录 core/template 来源状态。业务词汇的更新由项目自己的对账流程处理。
+文件、生成技能锁和 metadata 属于同一事务。Context、profile、技能锁和投影校验通过才提交；失败恢复原文件。备份保留在 `.yss-harness-state/frontend/transactions/<id>/`。发现中断事务先运行 recover；兼容的 sync --apply 也会先恢复并返回，需要重新预览再同步。恢复遇到后续修改或损坏备份时保留恢复清单，不覆盖修改。
+
+支持当前 metadata v2 实例。旧 repository-local 实例不自动转换；治理冲突可显式 `--apply --force`，用户资产、身份和受保护路径不能 force 接管。
+
+三家族之间以及本体/旧 dev 身份之间禁止自动转换。业务源码、构建文件、批准证据、Git、gitlink、嵌套仓库和越界路径均受保护。生成治理资产不会创建远程仓、Tracker 或业务运行时代码。
+
+模板内的[前端用户手册](https://github.com/iloveZzz/yss-harness-frontend-agent/blob/main/docs/user-guide/前端子项目用户手册.md)说明本仓操作主线；[CLI 使用说明](https://github.com/iloveZzz/yss-harness-frontend-agent/blob/main/docs/user-guide/CLI使用说明.md)说明实例侧命令和恢复语义。
+
+## 维护与安装验收
+
+```sh
+pnpm sync-core <本体仓库> <完整提交或WORKTREE>
+pnpm sync-template <本家族模板仓库> <完整提交或WORKTREE>
+pnpm test
+pnpm verify-bundle
+npm pack
+```
+
+同步脚本必须显式指定来源。WORKTREE 仅用于开发验收；固定交付使用完整 40 位提交。`--check` 只验证分发来源是否一致。普通测试不重建仓库模板，prepack 仅检查已准备快照；构建回归在临时副本执行。不要手改 vendor、模板 blobs 或来源锁。
+
+测试通过后在干净目录安装生成 tgz，再执行 init、attach、doctor、diff、sync、prune 与 recover 验收。Git 提交/推送、固定版本发布验证和 npm publish 分别授权。
