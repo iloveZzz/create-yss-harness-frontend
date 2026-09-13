@@ -1,12 +1,9 @@
 {
   "allowRootEntries": [
     ".agents",
-    ".claude",
     ".codex",
     ".cursor",
     ".pi",
-    ".qoder",
-    ".trae",
     "docs",
     "scripts"
   ],
@@ -47,7 +44,6 @@
     ".gitmodules"
   ],
   "excludePaths": [
-    ".claude/settings.local.json",
     ".codex/hooks.json",
     ".codex/settings.local.json",
     ".codex/skills/.DS_Store",

@@ -191,12 +191,9 @@ routing:
 - patterns:
   - skills-lock.json
   - .agents/skills/**
-  - .claude/skills/**
   - .codex/skills/**
   - .cursor/skills/**
   - .pi/skills/**
-  - .qoder/skills/**
-  - .trae/skills/**
   - docs/agents/yss-skill-registry.yaml
   - scripts/*skill*
   groups:

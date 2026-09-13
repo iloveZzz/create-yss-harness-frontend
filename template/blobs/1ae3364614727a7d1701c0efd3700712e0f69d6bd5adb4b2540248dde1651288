@@ -35,7 +35,7 @@ README、用户指南和 `CLAUDE.md` 只解释或指向上述事实，不定义�
 ## 4. `template-source` 维护
 
 - 创建、修改或退役 skill 时使用 `maintaining-skills`；维护强度和证据以裁剪文档为准，日常停在 `implementation-ready`，发布前执行完整门禁。
-- `.agents/skills` 是共享技能权威内容；`.claude/skills`、`.codex/skills`、`.cursor/skills`、`.pi/skills`、`.qoder/skills`、`.trae/skills` 是生成投影，不得分别手改。
+- `.agents/skills` 是共享技能权威内容；`.codex/skills`、`.cursor/skills`、`.pi/skills` 是生成投影，不得分别手改。
 - 依次使用 `scripts/verify-template-fast`、显式候选时的 `scripts/verify-template-candidate` 和发布前不可裁剪的 `scripts/verify-template`。未完成 `create-yss-harness-frontend` 固定快照及生成实例验证，不得宣称可发布。
 
 ## 5. `project-instance` 前端交付路由

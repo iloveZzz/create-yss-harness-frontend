@@ -207,12 +207,9 @@ invocation_contract:
       exclusion_conditions: [ code-only-work, command-only-work, unrelated-conversation, user-disabled ]
       primary_output: document-writing-assistance
 agent_runtime_roots:
-  claude: .claude/skills
   codex: .codex/skills
   cursor: .cursor/skills
   pi: .pi/skills
-  qoder: .qoder/skills
-  trae: .trae/skills
 skills:
   - {
       id: i-have-adhd,

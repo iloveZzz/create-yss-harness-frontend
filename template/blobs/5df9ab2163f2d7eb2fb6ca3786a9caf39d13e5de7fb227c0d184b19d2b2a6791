@@ -16,12 +16,9 @@ export const LEGACY_SPEC_CONTRACT = path.join(
 
 const REQUIRED_ALLOW_ROOT_ENTRIES = [
   ".agents",
-  ".claude",
   ".codex",
   ".cursor",
   ".pi",
-  ".qoder",
-  ".trae",
   "docs",
   "scripts",
 ];
