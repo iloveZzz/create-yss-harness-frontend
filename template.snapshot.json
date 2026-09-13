@@ -6,7 +6,7 @@
   "metadataFile": ".yss-harness-frontend.json",
   "templateName": "yss-harness-frontend-agent",
   "templateSource": "github:iloveZzz/yss-harness-frontend-agent",
-  "templateCommit": "b137d8362e79772fa1135fda472af55c4b53d050",
+  "templateCommit": "fa50cc5e352f42b6f2dd30257d3504bd7cb9fdea",
   "sourceState": "committed",
   "manifestHash": "85d99d140544d30a016cca23ebb166bd57e26debbc76cf403447d0d880d89f26",
   "files": {
@@ -16680,9 +16680,9 @@
     },
     "docs/process/delivery-preflight.md": {
       "type": "file",
-      "digest": "93993e148b1b1adafea5d8bb2e8c9b4154502ff8f62a0a3f9baa72dcf8c566e0",
+      "digest": "334a2d4df29ae8213b3e8214d17a2eb48662649fa895c3a9d68fcd23b3a1499d",
       "mode": 420,
-      "blob": "blobs/93993e148b1b1adafea5d8bb2e8c9b4154502ff8f62a0a3f9baa72dcf8c566e0"
+      "blob": "blobs/334a2d4df29ae8213b3e8214d17a2eb48662649fa895c3a9d68fcd23b3a1499d"
     },
     "docs/process/document-writing.md": {
       "type": "file",
@@ -16704,9 +16704,9 @@
     },
     "docs/process/frontend-backend-delivery.md": {
       "type": "file",
-      "digest": "2ac93f0d5b7aceed66c4de1e3acee6bd721d1702bad4a0aeb95041355fc93a9f",
+      "digest": "8a9d2468cb856dca2c8390a874942ba95d9de069ac64d1a4ed9cc6ef8f11d655",
       "mode": 420,
-      "blob": "blobs/2ac93f0d5b7aceed66c4de1e3acee6bd721d1702bad4a0aeb95041355fc93a9f"
+      "blob": "blobs/8a9d2468cb856dca2c8390a874942ba95d9de069ac64d1a4ed9cc6ef8f11d655"
     },
     "docs/process/harness-executive-blueprint.md": {
       "type": "file",
@@ -16890,15 +16890,27 @@
     },
     "docs/process/schemas/strategic-design-handoff.schema.json": {
       "type": "file",
-      "digest": "37b4ce4a6f1a09de01e3abb476af4b7c62cc0f8e19bc936990f07c5e9b464b74",
+      "digest": "8d3fbb3bb5fc5123970ca611a2b848f2a1a6d1739be80bc16ab9636dd037072b",
       "mode": 420,
-      "blob": "blobs/37b4ce4a6f1a09de01e3abb476af4b7c62cc0f8e19bc936990f07c5e9b464b74"
+      "blob": "blobs/8d3fbb3bb5fc5123970ca611a2b848f2a1a6d1739be80bc16ab9636dd037072b"
     },
     "docs/process/schemas/strategic-feedback-adjudication.schema.json": {
       "type": "file",
       "digest": "074fc1186c8698451a45d4164480e065bbb41e21699624cb6974faa464957019",
       "mode": 420,
       "blob": "blobs/074fc1186c8698451a45d4164480e065bbb41e21699624cb6974faa464957019"
+    },
+    "docs/process/schemas/strategic-handoff-delivery-verification.schema.json": {
+      "type": "file",
+      "digest": "d05b0156ee9a056f9af847feb8b7745ef7adcab0c82e9266106380615732d295",
+      "mode": 420,
+      "blob": "blobs/d05b0156ee9a056f9af847feb8b7745ef7adcab0c82e9266106380615732d295"
+    },
+    "docs/process/schemas/strategic-handoff-delivery.schema.json": {
+      "type": "file",
+      "digest": "7c0e9ee4ac42196525ab4c3834f773e97198676ba76e22160f101a7887191e7d",
+      "mode": 420,
+      "blob": "blobs/7c0e9ee4ac42196525ab4c3834f773e97198676ba76e22160f101a7887191e7d"
     },
     "docs/process/schemas/strategic-handoff-domain-strategy-v3.schema.json": {
       "type": "file",
@@ -16923,6 +16935,12 @@
       "digest": "6596cc5658d2495ea05d6ebf19d0f47f2864812c7336d73b7fa3af849d463c49",
       "mode": 420,
       "blob": "blobs/6596cc5658d2495ea05d6ebf19d0f47f2864812c7336d73b7fa3af849d463c49"
+    },
+    "docs/process/schemas/strategic-handoff-import-receipt-v3.schema.json": {
+      "type": "file",
+      "digest": "4ccc30108466ab8d8c63631868c72063542365e822a9567b942e1d5095682890",
+      "mode": 420,
+      "blob": "blobs/4ccc30108466ab8d8c63631868c72063542365e822a9567b942e1d5095682890"
     },
     "docs/process/schemas/strategic-handoff-import-receipt.schema.json": {
       "type": "file",
@@ -16962,9 +16980,9 @@
     },
     "docs/process/strategic-handoff-package.md": {
       "type": "file",
-      "digest": "e544263d414ef562743787b6a020271a9e9866f2fed19bfb381eb7676b67a874",
+      "digest": "196152c4b5b5e317db9a7d6bc48343d8b7fc226278366088f58771e66fbbc859",
       "mode": 420,
-      "blob": "blobs/e544263d414ef562743787b6a020271a9e9866f2fed19bfb381eb7676b67a874"
+      "blob": "blobs/196152c4b5b5e317db9a7d6bc48343d8b7fc226278366088f58771e66fbbc859"
     },
     "docs/process/subagent-collaboration.md": {
       "type": "file",
@@ -16992,9 +17010,9 @@
     },
     "docs/process/templates/lifecycle-checkpoint-template.yaml": {
       "type": "file",
-      "digest": "d733048aceb0465dc299aa1a15cb1fbb59e1abfd7661f10aa264fc09965ce71b",
+      "digest": "d652be0e66608bb91264e2e7e7f3ba8f3d0dd217cd8bc051deb1a0ff51595eb2",
       "mode": 420,
-      "blob": "blobs/d733048aceb0465dc299aa1a15cb1fbb59e1abfd7661f10aa264fc09965ce71b"
+      "blob": "blobs/d652be0e66608bb91264e2e7e7f3ba8f3d0dd217cd8bc051deb1a0ff51595eb2"
     },
     "docs/process/templates/scaffold-architecture-decisions-template.yaml": {
       "type": "file",
@@ -17394,9 +17412,9 @@
     },
     "scripts/fixtures/strategic-handoff/fixture.mjs": {
       "type": "file",
-      "digest": "f804a8d46aa79620a2135d1ee1afa3742d5219a93dd0b0e30ad5a3e9c2766be4",
+      "digest": "fa4eaf6208ed80c1d19d3cf5f42c0367011a360e733143b1c19c38f226a2b17d",
       "mode": 420,
-      "blob": "blobs/f804a8d46aa79620a2135d1ee1afa3742d5219a93dd0b0e30ad5a3e9c2766be4"
+      "blob": "blobs/fa4eaf6208ed80c1d19d3cf5f42c0367011a360e733143b1c19c38f226a2b17d"
     },
     "scripts/fixtures/strategic-handoff/source-roles.json": {
       "type": "file",
@@ -17652,15 +17670,15 @@
     },
     "scripts/lib/strategic-feedback.mjs": {
       "type": "file",
-      "digest": "f270ea41309fd4229e7351266a08c973016979bbcc2c554b1d2e9636f10e3441",
+      "digest": "70f3ef1060b6b8abf904183a7b613e6cb7f8bd0c6d2fee0617adcdc0b42ef874",
       "mode": 420,
-      "blob": "blobs/f270ea41309fd4229e7351266a08c973016979bbcc2c554b1d2e9636f10e3441"
+      "blob": "blobs/70f3ef1060b6b8abf904183a7b613e6cb7f8bd0c6d2fee0617adcdc0b42ef874"
     },
     "scripts/lib/strategic-handoff-consumption.mjs": {
       "type": "file",
-      "digest": "fa3751751f699fbf115785a713830806d46e5098c2e815c329089a481543efac",
+      "digest": "ddd402fd75facb584313745fdc3ad36fbf4edb3a548e1388f6486fde81f9c651",
       "mode": 420,
-      "blob": "blobs/fa3751751f699fbf115785a713830806d46e5098c2e815c329089a481543efac"
+      "blob": "blobs/ddd402fd75facb584313745fdc3ad36fbf4edb3a548e1388f6486fde81f9c651"
     },
     "scripts/lib/strategic-handoff-design-targets.mjs": {
       "type": "file",
@@ -17688,9 +17706,9 @@
     },
     "scripts/lib/strategic-handoff.mjs": {
       "type": "file",
-      "digest": "adfed7e9c8b746e0f3db4b1b85f00159f85cad5c349852b14cf22259182fdbb3",
+      "digest": "731aac05b79d64860d8b41d0059f298c441c23936715cb3677c7db1e6b73c02b",
       "mode": 420,
-      "blob": "blobs/adfed7e9c8b746e0f3db4b1b85f00159f85cad5c349852b14cf22259182fdbb3"
+      "blob": "blobs/731aac05b79d64860d8b41d0059f298c441c23936715cb3677c7db1e6b73c02b"
     },
     "scripts/lib/task-package-schema.mjs": {
       "type": "file",
@@ -17772,9 +17790,9 @@
     },
     "scripts/strategic-handoff": {
       "type": "file",
-      "digest": "616c2d62da4a9a5f33fa6a638685eb82c0fce511ab1725c6b050d8d0117ca5be",
+      "digest": "da481b802e95ae19f81c80b66d23334e47c43ba47018e73324bd75cc794da6f4",
       "mode": 493,
-      "blob": "blobs/616c2d62da4a9a5f33fa6a638685eb82c0fce511ab1725c6b050d8d0117ca5be"
+      "blob": "blobs/da481b802e95ae19f81c80b66d23334e47c43ba47018e73324bd75cc794da6f4"
     },
     "scripts/sync-skills": {
       "type": "file",
@@ -18048,9 +18066,9 @@
     },
     "scripts/verify-strategic-context-import": {
       "type": "file",
-      "digest": "0d0459514d5d2981753cf0ecbff45634fb276598c760b77c4982f9fe3fa6e1f1",
+      "digest": "06af5ae4943666d1521160b79d9eb5de3048fd02b6f2db336f614970e5c92788",
       "mode": 493,
-      "blob": "blobs/0d0459514d5d2981753cf0ecbff45634fb276598c760b77c4982f9fe3fa6e1f1"
+      "blob": "blobs/06af5ae4943666d1521160b79d9eb5de3048fd02b6f2db336f614970e5c92788"
     },
     "scripts/verify-strategic-context-import-scenarios": {
       "type": "file",
@@ -18066,9 +18084,9 @@
     },
     "scripts/verify-strategic-handoff-package-scenarios": {
       "type": "file",
-      "digest": "8eb3e3393028f1955f39de7a0559594e9ac23631374d657bee779ca4a7957d96",
+      "digest": "9d702f3d04fda88103e2f6e2ff45ff02e54fc006f2981bd33b554867a8336d09",
       "mode": 493,
-      "blob": "blobs/8eb3e3393028f1955f39de7a0559594e9ac23631374d657bee779ca4a7957d96"
+      "blob": "blobs/9d702f3d04fda88103e2f6e2ff45ff02e54fc006f2981bd33b554867a8336d09"
     },
     "scripts/verify-subagent-task-package": {
       "type": "file",
@@ -27533,14 +27551,39 @@
       "digest": "59782ea5361cf53ae943cb27aff85bfeaa5cf979f1f5c738e85d3fec715ec1c1",
       "mode": 420
     },
+    "docs/process/delivery-preflight.md": {
+      "type": "file",
+      "digest": "93993e148b1b1adafea5d8bb2e8c9b4154502ff8f62a0a3f9baa72dcf8c566e0",
+      "mode": 420
+    },
+    "docs/process/frontend-backend-delivery.md": {
+      "type": "file",
+      "digest": "2ac93f0d5b7aceed66c4de1e3acee6bd721d1702bad4a0aeb95041355fc93a9f",
+      "mode": 420
+    },
     "docs/process/schemas/lifecycle-checkpoint.schema.json": {
       "type": "file",
       "digest": "bb558834d699d6a9f431ce8198779b04efc68a411639fe0d2cb456a3c0010f17",
       "mode": 420
     },
+    "docs/process/schemas/strategic-design-handoff.schema.json": {
+      "type": "file",
+      "digest": "37b4ce4a6f1a09de01e3abb476af4b7c62cc0f8e19bc936990f07c5e9b464b74",
+      "mode": 420
+    },
+    "docs/process/strategic-handoff-package.md": {
+      "type": "file",
+      "digest": "e544263d414ef562743787b6a020271a9e9866f2fed19bfb381eb7676b67a874",
+      "mode": 420
+    },
     "docs/process/template-verification-profiles.yaml": {
       "type": "file",
       "digest": "e1c913d205ac3c8251c3e8b3f69f1f816cb71bf5d04694cead61368653421eb4",
+      "mode": 420
+    },
+    "docs/process/templates/lifecycle-checkpoint-template.yaml": {
+      "type": "file",
+      "digest": "d733048aceb0465dc299aa1a15cb1fbb59e1abfd7661f10aa264fc09965ce71b",
       "mode": 420
     },
     "docs/user-guide/CLI使用说明.md": {
@@ -27568,6 +27611,11 @@
       "digest": "621b82180674c95f8a7f3625858ed44682e701088e0cc7c6c4a5fa181c1b48c4",
       "mode": 420
     },
+    "scripts/fixtures/strategic-handoff/fixture.mjs": {
+      "type": "file",
+      "digest": "f804a8d46aa79620a2135d1ee1afa3742d5219a93dd0b0e30ad5a3e9c2766be4",
+      "mode": 420
+    },
     "scripts/lib/instance-distribution.mjs": {
       "type": "file",
       "digest": "36570e9d8289ccac4d7f60f4b37b5f5aa7d062472699ae2ac26a9c5b98da260f",
@@ -27583,10 +27631,40 @@
       "digest": "035eb32482bd51f962084555c09b4465db711213afc30124bd24d6ba7d8be407",
       "mode": 420
     },
+    "scripts/lib/strategic-feedback.mjs": {
+      "type": "file",
+      "digest": "f270ea41309fd4229e7351266a08c973016979bbcc2c554b1d2e9636f10e3441",
+      "mode": 420
+    },
+    "scripts/lib/strategic-handoff-consumption.mjs": {
+      "type": "file",
+      "digest": "fa3751751f699fbf115785a713830806d46e5098c2e815c329089a481543efac",
+      "mode": 420
+    },
     "scripts/lib/strategic-handoff-design-targets.mjs": {
       "type": "file",
       "digest": "28f7efa639c8be66503c0a566efa1ec8b85263502b49764210a17656fc70fd0d",
       "mode": 420
+    },
+    "scripts/lib/strategic-handoff.mjs": {
+      "type": "file",
+      "digest": "adfed7e9c8b746e0f3db4b1b85f00159f85cad5c349852b14cf22259182fdbb3",
+      "mode": 420
+    },
+    "scripts/strategic-handoff": {
+      "type": "file",
+      "digest": "616c2d62da4a9a5f33fa6a638685eb82c0fce511ab1725c6b050d8d0117ca5be",
+      "mode": 493
+    },
+    "scripts/verify-strategic-context-import": {
+      "type": "file",
+      "digest": "0d0459514d5d2981753cf0ecbff45634fb276598c760b77c4982f9fe3fa6e1f1",
+      "mode": 493
+    },
+    "scripts/verify-strategic-handoff-package-scenarios": {
+      "type": "file",
+      "digest": "8eb3e3393028f1955f39de7a0559594e9ac23631374d657bee779ca4a7957d96",
+      "mode": 493
     },
     "skills-lock.json": {
       "type": "file",
@@ -27594,8 +27672,8 @@
       "mode": 420
     }
   },
-  "transitionBaselinesHash": "23446797e703705c8052277c1db1f60866f5ae09e641c6f18d3a0ee5911f0a5b",
-  "snapshotHash": "ec93176a5e5bf9a196f6fa08c0e3562a39fafd408c6abdcf7467ca6106ff220c",
+  "transitionBaselinesHash": "c15150a6afb5c51dc5e675fabd826a78b13d1650653205e8789dfecd32a05eb3",
+  "snapshotHash": "097098686d6c80d4347f51e4364df944f896bf0d4466a227e9f17acfa0fb30bc",
   "projectionRepresentation": "materialized-files",
   "pathEncoding": "sha256-blobs-v1"
 }
