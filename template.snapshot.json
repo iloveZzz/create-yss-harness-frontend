@@ -6,7 +6,7 @@
   "metadataFile": ".yss-harness-frontend.json",
   "templateName": "yss-harness-frontend-agent",
   "templateSource": "github:iloveZzz/yss-harness-frontend-agent",
-  "templateCommit": "24728ee637fa9ab5367d46e6848dde9489e56598",
+  "templateCommit": "8042666dd831fa3f5d506c5bb3ca99d7bbd00c17",
   "sourceState": "committed",
   "manifestHash": "d989f260d8a74c0052ead6b7941b9559cdaa139ad62e2be87bb81da6856e5601",
   "files": {
@@ -17034,9 +17034,9 @@
     },
     "docs/engineering/backend-platforms.md": {
       "type": "file",
-      "digest": "c0f8b803a083ad8dfd8904db36e17cab2edcf011f52709879cd6b013ff30e025",
+      "digest": "32c4b9940131648a6d52aa4d6bfaecad3c4f92db8d711d89c71c24a7b91a3a2b",
       "mode": 420,
-      "blob": "blobs/c0f8b803a083ad8dfd8904db36e17cab2edcf011f52709879cd6b013ff30e025"
+      "blob": "blobs/32c4b9940131648a6d52aa4d6bfaecad3c4f92db8d711d89c71c24a7b91a3a2b"
     },
     "docs/implementation/.gitkeep": {
       "type": "file",
@@ -17082,9 +17082,9 @@
     },
     "docs/process/existing-ui-baseline.md": {
       "type": "file",
-      "digest": "f75b130f0c641df4f6eded47d15216984a8402acd983d6c03181486d47ace5f4",
+      "digest": "a4019c9aa3741c2009b9295ca84456bcc5655fbb514cdbd1b3cdba84f9cd06b4",
       "mode": 420,
-      "blob": "blobs/f75b130f0c641df4f6eded47d15216984a8402acd983d6c03181486d47ace5f4"
+      "blob": "blobs/a4019c9aa3741c2009b9295ca84456bcc5655fbb514cdbd1b3cdba84f9cd06b4"
     },
     "docs/process/frontend-backend-delivery.md": {
       "type": "file",
@@ -17226,9 +17226,9 @@
     },
     "docs/process/schemas/lifecycle-checkpoint.schema.json": {
       "type": "file",
-      "digest": "f6882ed25b679c918b8f5e0a1ea07546f0d068ac04f8a08e9a2851b40c74fe72",
+      "digest": "b40e4073c8487aae4e1f28bece886294dac9a4c11771b14200ff9f7b67f89685",
       "mode": 420,
-      "blob": "blobs/f6882ed25b679c918b8f5e0a1ea07546f0d068ac04f8a08e9a2851b40c74fe72"
+      "blob": "blobs/b40e4073c8487aae4e1f28bece886294dac9a4c11771b14200ff9f7b67f89685"
     },
     "docs/process/schemas/lifecycle-registry.schema.json": {
       "type": "file",
@@ -17247,6 +17247,12 @@
       "digest": "5295d6d428306db2d64161071789f4977f7ce9c7f9524ba0f5ce595284c98163",
       "mode": 420,
       "blob": "blobs/5295d6d428306db2d64161071789f4977f7ce9c7f9524ba0f5ce595284c98163"
+    },
+    "docs/process/schemas/review-bundle.schema.json": {
+      "type": "file",
+      "digest": "4b2dd0c0e3e410e066789167628f8461220d649e548c28b89a98e6b5bee8ccd8",
+      "mode": 420,
+      "blob": "blobs/4b2dd0c0e3e410e066789167628f8461220d649e548c28b89a98e6b5bee8ccd8"
     },
     "docs/process/schemas/scaffold-architecture-decisions.schema.json": {
       "type": "file",
@@ -17376,9 +17382,9 @@
     },
     "docs/process/strategic-handoff-package.md": {
       "type": "file",
-      "digest": "196152c4b5b5e317db9a7d6bc48343d8b7fc226278366088f58771e66fbbc859",
+      "digest": "6d884422f94fa623f43e9dd56cf1fd5055c3435b938610e53d1ae44d3dd59feb",
       "mode": 420,
-      "blob": "blobs/196152c4b5b5e317db9a7d6bc48343d8b7fc226278366088f58771e66fbbc859"
+      "blob": "blobs/6d884422f94fa623f43e9dd56cf1fd5055c3435b938610e53d1ae44d3dd59feb"
     },
     "docs/process/subagent-collaboration.md": {
       "type": "file",
@@ -17700,15 +17706,15 @@
     },
     "scripts/fixtures/existing-ui-baseline/design-source-roles.json": {
       "type": "file",
-      "digest": "6e94d05ab7374144b670b5d6c9e5dc2e3c6051347fff6aabc79cdd6a0932bebd",
+      "digest": "bb96fd45cbf4b15e98e9aacd41fbfda9dd4c792778e19b09097ad32ca5c94907",
       "mode": 420,
-      "blob": "blobs/6e94d05ab7374144b670b5d6c9e5dc2e3c6051347fff6aabc79cdd6a0932bebd"
+      "blob": "blobs/bb96fd45cbf4b15e98e9aacd41fbfda9dd4c792778e19b09097ad32ca5c94907"
     },
     "scripts/fixtures/existing-ui-baseline/fixture.mjs": {
       "type": "file",
-      "digest": "b4891769ebeb9a65c689dea4e29a11d3d0cf8ba047004005a54207ad82a5c7f9",
+      "digest": "be7a43f1bf92a8fecb6a1f579f91f62c5c648d55b3b32964db774e0a348c85d7",
       "mode": 420,
-      "blob": "blobs/b4891769ebeb9a65c689dea4e29a11d3d0cf8ba047004005a54207ad82a5c7f9"
+      "blob": "blobs/be7a43f1bf92a8fecb6a1f579f91f62c5c648d55b3b32964db774e0a348c85d7"
     },
     "scripts/fixtures/maintenance-review/maintenance-focused-review-approved.md": {
       "type": "file",
@@ -17812,6 +17818,12 @@
       "mode": 420,
       "blob": "blobs/518e7fe442964e44842170179b64fb1114ef6b65a8b28b5d0404031b189a8678"
     },
+    "scripts/fixtures/strategic-handoff/aggregate-source-roles.json": {
+      "type": "file",
+      "digest": "cc0e0ba8f01d17baccabdee595c25336c487805310b7825adff1a32216838989",
+      "mode": 420,
+      "blob": "blobs/cc0e0ba8f01d17baccabdee595c25336c487805310b7825adff1a32216838989"
+    },
     "scripts/fixtures/strategic-handoff/base-stage.json": {
       "type": "file",
       "digest": "2df5dbea262cf2bee39972da58e3e0fab844615e272d1e7c8ec2d262bcf486dd",
@@ -17826,9 +17838,9 @@
     },
     "scripts/fixtures/strategic-handoff/fixture.mjs": {
       "type": "file",
-      "digest": "fa4eaf6208ed80c1d19d3cf5f42c0367011a360e733143b1c19c38f226a2b17d",
+      "digest": "7c1f8d879cfaf6a3f6651c01503d70ff7062d254c43f3f50c296c55ecc4c039a",
       "mode": 420,
-      "blob": "blobs/fa4eaf6208ed80c1d19d3cf5f42c0367011a360e733143b1c19c38f226a2b17d"
+      "blob": "blobs/7c1f8d879cfaf6a3f6651c01503d70ff7062d254c43f3f50c296c55ecc4c039a"
     },
     "scripts/fixtures/strategic-handoff/source-roles.json": {
       "type": "file",
@@ -17838,9 +17850,9 @@
     },
     "scripts/fixtures/user-decision/build-fixture.mjs": {
       "type": "file",
-      "digest": "8be5209cda2f089dca4863734d6a8802cc5f4dd5c3b14a97fa37c8bb72d6a2ad",
+      "digest": "0aa49bd3eb10a504094bc1c9855543b652cc68b1e9e94d7d043586a4cd05e0ef",
       "mode": 420,
-      "blob": "blobs/8be5209cda2f089dca4863734d6a8802cc5f4dd5c3b14a97fa37c8bb72d6a2ad"
+      "blob": "blobs/0aa49bd3eb10a504094bc1c9855543b652cc68b1e9e94d7d043586a4cd05e0ef"
     },
     "scripts/generate-lifecycle-artifacts": {
       "type": "file",
@@ -18162,9 +18174,9 @@
     },
     "scripts/lib/strategic-handoff-io.mjs": {
       "type": "file",
-      "digest": "cfe93a3ff199bb84a9c294626cb06dda29ff61ac852ef20b949c4912194c1212",
+      "digest": "ad7d5038757cdedebe70a858441685afe39de3bfee462666d6483d67cd8b11de",
       "mode": 420,
-      "blob": "blobs/cfe93a3ff199bb84a9c294626cb06dda29ff61ac852ef20b949c4912194c1212"
+      "blob": "blobs/ad7d5038757cdedebe70a858441685afe39de3bfee462666d6483d67cd8b11de"
     },
     "scripts/lib/strategic-handoff-rules.mjs": {
       "type": "file",
@@ -18180,9 +18192,9 @@
     },
     "scripts/lib/strategic-handoff.mjs": {
       "type": "file",
-      "digest": "db15ec4c52b660cb991c35eb868100a3e5e126d40dc4769212f9748253834591",
+      "digest": "497cd1c926a1968d35fcad56f653994cf9f4115597ea72e5acbde3243e2c7ac4",
       "mode": 420,
-      "blob": "blobs/db15ec4c52b660cb991c35eb868100a3e5e126d40dc4769212f9748253834591"
+      "blob": "blobs/497cd1c926a1968d35fcad56f653994cf9f4115597ea72e5acbde3243e2c7ac4"
     },
     "scripts/lib/task-package-schema.mjs": {
       "type": "file",
@@ -18222,9 +18234,9 @@
     },
     "scripts/lib/user-decision.mjs": {
       "type": "file",
-      "digest": "68f061fa738ed6ec7830627a3b103dbe4bf7ee768152e65733682344ac0d18bd",
+      "digest": "eec3c9ce5916e559a37a4ae60ff6c9ee78f06b8fcd5fc2cb3d5a39f237bc56e0",
       "mode": 420,
-      "blob": "blobs/68f061fa738ed6ec7830627a3b103dbe4bf7ee768152e65733682344ac0d18bd"
+      "blob": "blobs/eec3c9ce5916e559a37a4ae60ff6c9ee78f06b8fcd5fc2cb3d5a39f237bc56e0"
     },
     "scripts/node-generate-lifecycle-artifacts.mjs": {
       "type": "file",
@@ -18372,9 +18384,9 @@
     },
     "scripts/verify-existing-ui-baseline-scenarios": {
       "type": "file",
-      "digest": "673cf917da431237f1d713a861da824dd0f23e67e62c9833cb9c7fde25691a84",
+      "digest": "47e73a7e1c4347567083afda2b93c72c04a8c126e5d419348648f32c4d591b19",
       "mode": 493,
-      "blob": "blobs/673cf917da431237f1d713a861da824dd0f23e67e62c9833cb9c7fde25691a84"
+      "blob": "blobs/47e73a7e1c4347567083afda2b93c72c04a8c126e5d419348648f32c4d591b19"
     },
     "scripts/verify-frontend-delivery": {
       "type": "file",
@@ -18570,9 +18582,9 @@
     },
     "scripts/verify-strategic-handoff-package-scenarios": {
       "type": "file",
-      "digest": "9d702f3d04fda88103e2f6e2ff45ff02e54fc006f2981bd33b554867a8336d09",
+      "digest": "35f5ccf55f11e59848e53a865acba6a66ba9e8ab45d4c2ccc592e1d03660f892",
       "mode": 493,
-      "blob": "blobs/9d702f3d04fda88103e2f6e2ff45ff02e54fc006f2981bd33b554867a8336d09"
+      "blob": "blobs/35f5ccf55f11e59848e53a865acba6a66ba9e8ab45d4c2ccc592e1d03660f892"
     },
     "scripts/verify-subagent-task-package": {
       "type": "file",
@@ -29477,6 +29489,11 @@
       "digest": "93993e148b1b1adafea5d8bb2e8c9b4154502ff8f62a0a3f9baa72dcf8c566e0",
       "mode": 420
     },
+    "docs/process/existing-ui-baseline.md": {
+      "type": "file",
+      "digest": "f75b130f0c641df4f6eded47d15216984a8402acd983d6c03181486d47ace5f4",
+      "mode": 420
+    },
     "docs/process/frontend-backend-delivery.md": {
       "type": "file",
       "digest": "2ac93f0d5b7aceed66c4de1e3acee6bd721d1702bad4a0aeb95041355fc93a9f",
@@ -29567,6 +29584,16 @@
       "digest": "18922af75254c45180d3b9b6557142b1c247d87a78ee532547453648096b9143",
       "mode": 420
     },
+    "scripts/fixtures/existing-ui-baseline/design-source-roles.json": {
+      "type": "file",
+      "digest": "6e94d05ab7374144b670b5d6c9e5dc2e3c6051347fff6aabc79cdd6a0932bebd",
+      "mode": 420
+    },
+    "scripts/fixtures/existing-ui-baseline/fixture.mjs": {
+      "type": "file",
+      "digest": "b4891769ebeb9a65c689dea4e29a11d3d0cf8ba047004005a54207ad82a5c7f9",
+      "mode": 420
+    },
     "scripts/fixtures/strategic-handoff/fixture.mjs": {
       "type": "file",
       "digest": "f804a8d46aa79620a2135d1ee1afa3742d5219a93dd0b0e30ad5a3e9c2766be4",
@@ -29575,6 +29602,11 @@
     "scripts/fixtures/strategic-handoff/source-roles.json": {
       "type": "file",
       "digest": "9fa3119c0299087675107fde5a54ea0ed5523448bb0601bef51eebad3569b243",
+      "mode": 420
+    },
+    "scripts/fixtures/user-decision/build-fixture.mjs": {
+      "type": "file",
+      "digest": "8be5209cda2f089dca4863734d6a8802cc5f4dd5c3b14a97fa37c8bb72d6a2ad",
       "mode": 420
     },
     "scripts/lib/approved-execution-context.mjs": {
@@ -29672,6 +29704,11 @@
       "digest": "28f7efa639c8be66503c0a566efa1ec8b85263502b49764210a17656fc70fd0d",
       "mode": 420
     },
+    "scripts/lib/strategic-handoff-io.mjs": {
+      "type": "file",
+      "digest": "cfe93a3ff199bb84a9c294626cb06dda29ff61ac852ef20b949c4912194c1212",
+      "mode": 420
+    },
     "scripts/lib/strategic-handoff.mjs": {
       "type": "file",
       "digest": "adfed7e9c8b746e0f3db4b1b85f00159f85cad5c349852b14cf22259182fdbb3",
@@ -29707,6 +29744,11 @@
       "digest": "616c2d62da4a9a5f33fa6a638685eb82c0fce511ab1725c6b050d8d0117ca5be",
       "mode": 493
     },
+    "scripts/verify-existing-ui-baseline-scenarios": {
+      "type": "file",
+      "digest": "673cf917da431237f1d713a861da824dd0f23e67e62c9833cb9c7fde25691a84",
+      "mode": 493
+    },
     "scripts/verify-retired-skill-ids": {
       "type": "file",
       "digest": "ee9612c2081ae9dcb145c76f113b528112ce4af34e2f5737b9e35df308427cd9",
@@ -29738,8 +29780,8 @@
       "mode": 420
     }
   },
-  "transitionBaselinesHash": "9210de48c5edab88e104da3714de401fff702f7b5dbe6dd350570150e96acc4c",
-  "snapshotHash": "553e63b7dbdcd004145718fa231f948406a6624c34138c1be838f02de0df8008",
+  "transitionBaselinesHash": "f3a993f63df5383ec6b44933eacac376124203086014978b9c381da7826833bd",
+  "snapshotHash": "35c31a5aa52fa48cc641f175df5974e401694a78d3688ceee65396869c9a10f8",
   "projectionRepresentation": "materialized-files",
   "pathEncoding": "sha256-blobs-v1"
 }
