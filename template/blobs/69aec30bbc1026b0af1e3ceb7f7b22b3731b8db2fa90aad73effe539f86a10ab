@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "source": "iloveZzz/yss-harness-design-agent",
+  "source_type": "git-submodule",
+  "source_root": ".agents/skills",
+  "source_revision": "e2a4e726c7a34ddbf2658749b3ceb4c913f4530e",
+  "adaptation_ref": "docs/agents/strategic-design-skills-integration.md",
+  "skills": [
+    {
+      "upstream": "prototype-review",
+      "canonical": "prototype-review",
+      "upstream_hash": "9206df8b6c555c1af1351e425c5ec99ec2a40263c6861607f1418b9c520873ab"
+    },
+    {
+      "upstream": "yss-prototype-stage",
+      "canonical": "yss-prototype-stage",
+      "upstream_hash": "8256a1edfeb203f4de27d190210b0ba5593f8f74e0f3655b62b146daff2105a8"
+    },
+    {
+      "upstream": "yss-design-system",
+      "canonical": "yss-design-system",
+      "upstream_hash": "c917ecf40a67c52f0fa7894fbdfbf827cc1ed6aff1037be2911377387fede1a0"
+    },
+    {
+      "upstream": "yss-stage-decision",
+      "canonical": "yss-stage-decision",
+      "upstream_hash": "46a9be287963eff0e71f8106b5d31311e43aabbd1117d7bc3d2d8666a0a99474"
+    }
+  ],
+  "source_state": "committed",
+  "source_state_note": "source_revision、upstream_hash 与 gitlink 绑定同一已提交战略设计来源。"
+}
