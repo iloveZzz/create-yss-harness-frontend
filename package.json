@@ -1,6 +1,6 @@
 {
   "name": "create-yss-harness-frontend",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "创建和同步 YSS frontend 专职 Harness 治理项目",
   "type": "module",
   "license": "UNLICENSED",
