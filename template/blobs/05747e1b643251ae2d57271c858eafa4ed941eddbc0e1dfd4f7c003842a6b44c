@@ -5,6 +5,7 @@ import path from "node:path";
 import { PROJECTION_ROOTS, ROOT } from "./lib/skill-supply-chain.mjs";
 
 const retired = [
+  "grill-me",
   "component-selection-imports",
   "page-form-module",
   "page-list-module",
@@ -16,19 +17,22 @@ const retired = [
   "yss-source-index",
   "yss-components",
 ];
-const allowed = (relative) => relative === "docs/agents/skill-migrations.md"
+const allowed = (relative, line) => relative === "docs/agents/skill-migrations.md"
   || relative.includes("/docs/agents/skill-migrations.md")
   || relative.startsWith(".template-source/wiki/raw/")
   || relative.endsWith(".template-source/wiki/raw/skill-migrations.md")
   || relative.startsWith(".template-source/evidence/")
   || relative.includes("/.template-source/evidence/")
   || relative.includes("/tests/")
+  // The resolver names this retired ID only to reject it and return its replacement.
+  || (relative === "scripts/lib/skill-registry.mjs" && line.includes('const replacementSkill = requestedId === "grill-me"'))
   || relative.endsWith("/skills/.yss-skills-manifest.json")
   || relative.endsWith("scripts/verify-retired-skill-ids")
   || relative.endsWith("scripts/lib/skill-supply-chain.mjs")
   || relative.endsWith("scripts/lib/implementation-contract-compiler.mjs");
 
 const retiredSkillPattern = [
+  "(?<![a-z0-9-])grill-me(?![a-z0-9-])",
   "component-selection-imports",
   "page-form-module",
   "page-list-module",
@@ -50,7 +54,7 @@ if (![0, 1].includes(search.status)) {
 }
 const violations = search.stdout.split(/\r?\n/).filter(Boolean).filter((line) => {
   const match = line.match(/^\.\/(.*?):\d+:/);
-  return !match || !allowed(match[1]);
+  return !match || !allowed(match[1], line);
 });
 for (const name of retired) {
   const roots = [".agents/skills", ...PROJECTION_ROOTS];
