@@ -4,7 +4,7 @@
     ".codex",
     ".cursor",
     ".pi",
-    "docs",
+    ".template-spec",
     "scripts"
   ],
   "allowRootFiles": [
@@ -21,7 +21,7 @@
     "yss-public-skills.json"
   ],
   "allowFiles": [
-    "docs/adr/README.md"
+    ".template-spec/adr/README.md"
   ],
   "excludeRootEntries": [
     ".git",
@@ -61,7 +61,7 @@
     "yss-project.yaml"
   ],
   "exampleDocPaths": [
-    "docs/discovery/IDEATION.md"
+    ".template-spec/discovery/IDEATION.md"
   ],
   "initExcludeRootEntries": [],
   "initExcludeRootFiles": [
