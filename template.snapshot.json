@@ -6,7 +6,7 @@
   "metadataFile": ".yss-harness-frontend.json",
   "templateName": "yss-harness-frontend-agent",
   "templateSource": "github:iloveZzz/yss-harness-frontend-agent",
-  "templateCommit": "bda4a791b70d33637d8bded5b158d14a90b26825",
+  "templateCommit": "2aa574462cb55815421e03cd394da02e06d9948c",
   "sourceState": "committed",
   "manifestHash": "7aa5b118eb9ae4f4a154ca7a875a4e34939e40edf477487840f117f36607619d",
   "files": {
