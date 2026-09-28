@@ -1,5 +1,5 @@
-import { assertLocalSkillReferences } from './harness-skill-scope.mjs';
-import { existsSync } from 'node:fs';
+import { loadExecutionScope, assertScopeWorkUnit } from './lifecycle-execution-scope.mjs';
+import { existsSync } from './validation-phase.mjs';
 import path from 'node:path';
 import { ROOT, read, safe, ensure } from './strategic-handoff-io.mjs';
 
@@ -31,6 +31,12 @@ function activeProfile(root) {
 }
 
 export function enforceHarnessTaskScope(task,{root=ROOT}={}) {
+  const scope=loadExecutionScope(root);
+  if(scope) {
+    assertScopeWorkUnit(task.contract?.kind==='slice-implementation'?'work-unit.slice-implementation':task.work_unit_id,{root,readOnly:task.contract?.kind==='read-only-intake'});
+    ensure(task.role_id!=='role.frontend-engineer','后端职责不允许派发前端实现');
+    ensure(task.allowed_write_paths.every(ref=>!/^apps\/frontend(?:\/|$)/.test(ref)),'禁止写入前端工程');
+  }
   const profile=activeProfile(root);
   if (!profile) return;
   ensure(task.contract?.kind!=='template-maintenance','专职产品项目不得派发模板维护任务');
@@ -42,9 +48,15 @@ export function enforceHarnessTaskScope(task,{root=ROOT}={}) {
 }
 
 export function enforceHarnessSkillScope(skills,registry,{root=ROOT}={}) {
+  if(loadExecutionScope(root)) {
+    assertScopeWorkUnit('work-unit.slice-implementation',{root});
+    for(const id of skills) {
+      const impacts=registry.skills.find(skill=>skill.id===id)?.impacts||[];
+      ensure(!impacts.includes('frontend')||impacts.includes('backend')||impacts.includes('lifecycle'),`后端职责禁止编译生产前端技能: ${id}`);
+    }
+  }
   const profile=activeProfile(root);
   if (!profile) return;
-  assertLocalSkillReferences(skills, registry, profile);
   const side=profile.profile_id==='harness.frontend-delivery'?'frontend':'backend';
   const opposite=side==='frontend'?'backend':'frontend';
   for (const id of skills) {

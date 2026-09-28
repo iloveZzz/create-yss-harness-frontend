@@ -746,7 +746,7 @@
         "source": "project",
         "sourceType": "local",
         "skillPath": ".agents/skills/yss-research/SKILL.md",
-        "effectiveHash": "38059a4a505dcf1b674f324e8f507e8564f8ba036e417129a7bbc2727b5209a3",
+        "effectiveHash": "df66dab86ee68d874d6b3572074508aa8fb7e4dc8c63570f0b5d585e569f1b3e",
         "targets": [
           ".agents/skills",
           ".codex/skills",
