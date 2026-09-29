@@ -3,6 +3,9 @@ name: harness-orchestrator
 description: 编排前端专职 Harness 的输入接收、合同、任务派发与验证；当需要前端流程路由或恢复时使用。
 ---
 
+已显式托管的首批阅读包：权威源编辑结束后运行 `scripts/contract render --checkpoint <ref>`；审阅准备或交接前运行 `check-views`。阅读生成失败只恢复派生页，不重做成功源事务。详见 `.template-spec/process/contract-reading.md`。
+
+
 # Harness Orchestrator
 
 前端工程只消费已批准战略和真实后端交付。输入不完整时只允许只读诊断，后端架构、API 或数据变更回交后端项目。

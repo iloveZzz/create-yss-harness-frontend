@@ -1,3 +1,4 @@
+import {assertReadingTransition} from './reading-view-bundle.mjs';
 import { ROOT } from './lifecycle-registry.mjs';
 import { assertTrackingTransition } from './stage-tracking.mjs';
 import { enforceFrontendDelivery } from "./frontend-delivery-boundary.mjs";
@@ -47,6 +48,8 @@ const blockedResult = (signals, missing = [], evidenceRefs = []) => ({
 });
 
 export function validateNextRoute(currentWorkUnit, nextRoute, state, options = {}) {
+  try { assertReadingTransition(options.root || ROOT, state, currentWorkUnit); }
+  catch (error) { return blockedResult(['reading-views-stale'], [error.message]); }
   try { assertTrackingTransition(currentWorkUnit, nextRoute, state, { root: options.root || ROOT }); }
   catch (error) { return blockedResult(['stage-tracking-blocked'], [error.message]); }
   if (["work-unit.frontend-engineering-design", CONTRACT_WORK_UNIT, IMPLEMENTATION_WORK_UNIT, VERIFICATION_WORK_UNIT].includes(nextRoute)) {
