@@ -284,7 +284,7 @@
         "source": "project",
         "sourceType": "local",
         "skillPath": ".agents/skills/harness-orchestrator/SKILL.md",
-        "effectiveHash": "0e3982147498d34b06dc20b03b99d1e3afca45efbd08cc8a09f4bd02a9914d64",
+        "effectiveHash": "ac123b2fc35d2d26aeed3c75d5076b0e4b3554264ceaa056c5b002db73cd1d0c",
         "targets": [
           ".agents/skills",
           ".codex/skills",
@@ -631,6 +631,18 @@
           ".pi/skills"
         ]
       },
+      "yss-harness-upgrade": {
+        "source": "project",
+        "sourceType": "local",
+        "skillPath": ".agents/skills/yss-harness-upgrade/SKILL.md",
+        "effectiveHash": "1ca31a3a701cfd560116f6c3d355357b080889c58a9468d2bad39051a2545262",
+        "targets": [
+          ".agents/skills",
+          ".codex/skills",
+          ".cursor/skills",
+          ".pi/skills"
+        ]
+      },
       "yss-hook": {
         "source": "project",
         "sourceType": "local",
@@ -647,7 +659,7 @@
         "source": "project",
         "sourceType": "local",
         "skillPath": ".agents/skills/yss-implementation-contract-compiler/SKILL.md",
-        "effectiveHash": "395bb14ec1c6cc632070111368bff0640503a3f5715497bec57bf9ae496bd122",
+        "effectiveHash": "6a25718f23cc23a4214fc5a90cf63c9d5f56cb87b53455f0a2ecf5435030496b",
         "targets": [
           ".agents/skills",
           ".codex/skills",

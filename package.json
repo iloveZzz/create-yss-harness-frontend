@@ -1,6 +1,6 @@
 {
   "name": "create-yss-harness-frontend",
-  "version": "0.3.15",
+  "version": "0.3.16",
   "description": "创建和同步 YSS frontend 专职 Harness 治理项目",
   "type": "module",
   "license": "UNLICENSED",
@@ -22,7 +22,8 @@
     "cli-core.lock.json",
     "template",
     "template.manifest.json",
-    "template.snapshot.json"
+    "template.snapshot.json",
+    "resources/upgrade-skill"
   ],
   "scripts": {
     "sync-core": "node scripts/sync-core.mjs",

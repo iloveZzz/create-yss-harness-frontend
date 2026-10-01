@@ -56,3 +56,6 @@ description: 编排前端专职 Harness 的输入接收、合同、任务派发�
 ## 业务 Ticket 来源
 
 按 `.template-spec/process/business-tickets.md` 执行 Spec 业务草案、Design 校准与业务正式化。业务票放在 `business-tickets/`，集合引用进入 Spec / map / checkpoint；业务票不授予实现资格。实现票仍在 `issues/`，受工程准备、当前 Slice 合同批准和完整就绪检查约束。 接收新能力交接时核验业务集合、规则/场景映射与原始验收；依赖未知时保守阻断范围，不无依据缩小影响。不把战略交接 approved 等同工程可实现。
+
+<!-- HARNESS_UPGRADE_ROUTE -->
+既有实例的模板升级、布局迁移和恢复使用 `yss-harness-upgrade`，遵循 `.template-spec/process/harness-upgrade.md`；升级不推进阶段或改写历史批准。

@@ -54,6 +54,7 @@
 | `yss-implementation-contract-compiler` | `i-have-adhd` | `context-conditional` | `lifecycle-document-output` |
 | `yss-openapi-governance` | `i-have-adhd` | `context-conditional` | `lifecycle-document-output` |
 | `yss-prototype-stage` | `i-have-adhd` | `context-conditional` | `lifecycle-document-output` |
+| `yss-harness-upgrade` | `i-have-adhd` | `context-conditional` | `lifecycle-document-output` |
 | `yss-research` | `i-have-adhd` | `context-conditional` | `lifecycle-document-output` |
 | `harness-orchestrator` | `i-have-adhd` | `context-conditional` | `lifecycle-document-output` |
 | `yss-ui-business-page-generation` | `yss-ui` | `context-required` | — |
