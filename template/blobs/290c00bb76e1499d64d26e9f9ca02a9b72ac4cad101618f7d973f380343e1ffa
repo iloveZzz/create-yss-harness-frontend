@@ -21,7 +21,7 @@
       "revision": "c4d958f18cc947cb91cbe1bd48783fa4601cc18f"
     },
     "iloveZzz/yss-harness-design-agent": {
-      "revision": "83d7bce7eab1adf16e02a419717c94fa8ba84f43"
+      "revision": "4159f465477b30c64e605c4fa3ccf594b8d9ecb8"
     }
   },
   "skills": {
@@ -378,9 +378,9 @@
         "sourceType": "git-submodule",
         "skillPath": ".agents/skills/prototype-review/SKILL.md",
         "effectiveHash": "a228fbe0dca68489251803f53bd6e4397624dc736b923d8c43f4ee7fd006e86e",
-        "sourceRevision": "83d7bce7eab1adf16e02a419717c94fa8ba84f43",
-        "upstreamHash": "6df02dd4de236a749a80efd5eba46d18be7979849af2a9af28636906ccfcb2a0",
-        "adaptationRef": ".template-spec/agents/strategic-design-skills-integration.md",
+        "sourceRevision": "4159f465477b30c64e605c4fa3ccf594b8d9ecb8",
+        "upstreamHash": "9c0b042760f7d741487e62eaccf55b5079a1991e5489286560e278c9642a09b0",
+        "adaptationRef": ".template-source/agents/strategic-design-skills-integration.md",
         "targets": [
           ".agents/skills",
           ".codex/skills",
@@ -582,9 +582,9 @@
         "sourceType": "git-submodule",
         "skillPath": ".agents/skills/yss-design-system/SKILL.md",
         "effectiveHash": "497f2ca2201be1c0f4faeb7a356d80e94885cb0752f3aa4dad01d10450b75773",
-        "sourceRevision": "83d7bce7eab1adf16e02a419717c94fa8ba84f43",
-        "upstreamHash": "e156229435c35827c48d3699b021e5e171ec565c2bf91cc91cbb033bf7802d7c",
-        "adaptationRef": ".template-spec/agents/strategic-design-skills-integration.md",
+        "sourceRevision": "4159f465477b30c64e605c4fa3ccf594b8d9ecb8",
+        "upstreamHash": "3884a6b9e0a836c2c783bbe51d7737fee874662ea1964a7df545c2f1ababf4e3",
+        "adaptationRef": ".template-source/agents/strategic-design-skills-integration.md",
         "targets": [
           ".agents/skills",
           ".codex/skills",
@@ -696,9 +696,9 @@
         "sourceType": "git-submodule",
         "skillPath": ".agents/skills/yss-prototype-stage/SKILL.md",
         "effectiveHash": "c88b1b84ae99ba90cd9bca8b3c6b9c258d0dd41968689910556695b8729c51a4",
-        "sourceRevision": "83d7bce7eab1adf16e02a419717c94fa8ba84f43",
-        "upstreamHash": "6e1bcdf107d95c11faee2b988e4e0c36b8e5b76f6b40312a206b83733a96b0fc",
-        "adaptationRef": ".template-spec/agents/strategic-design-skills-integration.md",
+        "sourceRevision": "4159f465477b30c64e605c4fa3ccf594b8d9ecb8",
+        "upstreamHash": "0e82e8c0f6b5446dbe48aec8df092574ab895be303efe33d8fc8457bce98d02e",
+        "adaptationRef": ".template-source/agents/strategic-design-skills-integration.md",
         "targets": [
           ".agents/skills",
           ".codex/skills",

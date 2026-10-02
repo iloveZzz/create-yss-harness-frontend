@@ -6,7 +6,7 @@
   "metadataFile": ".yss-harness-frontend.json",
   "templateName": "yss-harness-frontend-agent",
   "templateSource": "github:iloveZzz/yss-harness-frontend-agent",
-  "templateCommit": "1db5eb898cadca787827859d99c2238590abd0bc",
+  "templateCommit": "78ceb945199458b8e3901a627fb6c3d2fc53d532",
   "sourceState": "committed",
   "manifestHash": "7aa5b118eb9ae4f4a154ca7a875a4e34939e40edf477487840f117f36607619d",
   "files": {
@@ -18,9 +18,9 @@
     },
     ".agents/skills/.strategic-design-skills-manifest.json": {
       "type": "file",
-      "digest": "04a88792453f9e030f9430db5a24bf15036263ecf7f84514b9c2119712046cf5",
+      "digest": "e6d89e022be0f05cebedb98f0a939d63207f381b80d37faffa268ba669dde7e4",
       "mode": 420,
-      "blob": "blobs/04a88792453f9e030f9430db5a24bf15036263ecf7f84514b9c2119712046cf5"
+      "blob": "blobs/e6d89e022be0f05cebedb98f0a939d63207f381b80d37faffa268ba669dde7e4"
     },
     ".agents/skills/.yss-skills-manifest.json": {
       "type": "file",
@@ -26268,9 +26268,9 @@
     },
     "skills-lock.json": {
       "type": "file",
-      "digest": "59f4da80414c0f6c8a58c8a71ce5215ae1a8fa4f262956a524db6efc45397935",
+      "digest": "290c00bb76e1499d64d26e9f9ca02a9b72ac4cad101618f7d973f380343e1ffa",
       "mode": 420,
-      "blob": "blobs/59f4da80414c0f6c8a58c8a71ce5215ae1a8fa4f262956a524db6efc45397935"
+      "blob": "blobs/290c00bb76e1499d64d26e9f9ca02a9b72ac4cad101618f7d973f380343e1ffa"
     },
     "yss-project.yaml": {
       "type": "file",
@@ -45145,7 +45145,7 @@
     }
   },
   "transitionBaselinesHash": "42a005f2cafc057dd2b21e59e53b44dd713895cde1ae973efe411e41beb6d603",
-  "snapshotHash": "16b3a31bcc71becd35753dffc218a2db487f50b64bdc321850dc9266357a6a21",
+  "snapshotHash": "2f7308604ab100b199e856fc7e7a7689a1c3e39ccdf696ed784bb04484f10318",
   "projectionRepresentation": "materialized-files",
   "pathEncoding": "sha256-blobs-v1"
 }
