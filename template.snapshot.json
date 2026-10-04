@@ -6,7 +6,7 @@
   "metadataFile": ".yss-harness-frontend.json",
   "templateName": "yss-harness-frontend-agent",
   "templateSource": "github:iloveZzz/yss-harness-frontend-agent",
-  "templateCommit": "7abc433351c17ad5a1876d4c85683e545b70f4c4",
+  "templateCommit": "a4c3a8d94b0240b619228ccac6da7b4cce3608e3",
   "sourceState": "committed",
   "manifestHash": "7aa5b118eb9ae4f4a154ca7a875a4e34939e40edf477487840f117f36607619d",
   "files": {
@@ -4392,9 +4392,9 @@
     },
     ".agents/skills/yss-prototype-stage/scripts/verify-prototype-design.mjs": {
       "type": "file",
-      "digest": "a36e4bc88bb9bbbf11eeddc87c7630e6dd2cac85f128916c546f58506c3a5ecf",
+      "digest": "0e258a6b473c6ad341ee8a17f736f8d80eddeb32a126dd2453534f8d6b29c9ba",
       "mode": 420,
-      "blob": "blobs/a36e4bc88bb9bbbf11eeddc87c7630e6dd2cac85f128916c546f58506c3a5ecf"
+      "blob": "blobs/0e258a6b473c6ad341ee8a17f736f8d80eddeb32a126dd2453534f8d6b29c9ba"
     },
     ".agents/skills/yss-prototype-stage/scripts/visual-baseline-contract.mjs": {
       "type": "file",
@@ -10614,9 +10614,9 @@
     },
     ".codex/skills/yss-prototype-stage/scripts/verify-prototype-design.mjs": {
       "type": "file",
-      "digest": "a36e4bc88bb9bbbf11eeddc87c7630e6dd2cac85f128916c546f58506c3a5ecf",
+      "digest": "0e258a6b473c6ad341ee8a17f736f8d80eddeb32a126dd2453534f8d6b29c9ba",
       "mode": 420,
-      "blob": "blobs/a36e4bc88bb9bbbf11eeddc87c7630e6dd2cac85f128916c546f58506c3a5ecf"
+      "blob": "blobs/0e258a6b473c6ad341ee8a17f736f8d80eddeb32a126dd2453534f8d6b29c9ba"
     },
     ".codex/skills/yss-prototype-stage/scripts/visual-baseline-contract.mjs": {
       "type": "file",
@@ -16500,9 +16500,9 @@
     },
     ".cursor/skills/yss-prototype-stage/scripts/verify-prototype-design.mjs": {
       "type": "file",
-      "digest": "a36e4bc88bb9bbbf11eeddc87c7630e6dd2cac85f128916c546f58506c3a5ecf",
+      "digest": "0e258a6b473c6ad341ee8a17f736f8d80eddeb32a126dd2453534f8d6b29c9ba",
       "mode": 420,
-      "blob": "blobs/a36e4bc88bb9bbbf11eeddc87c7630e6dd2cac85f128916c546f58506c3a5ecf"
+      "blob": "blobs/0e258a6b473c6ad341ee8a17f736f8d80eddeb32a126dd2453534f8d6b29c9ba"
     },
     ".cursor/skills/yss-prototype-stage/scripts/visual-baseline-contract.mjs": {
       "type": "file",
@@ -22398,9 +22398,9 @@
     },
     ".pi/skills/yss-prototype-stage/scripts/verify-prototype-design.mjs": {
       "type": "file",
-      "digest": "a36e4bc88bb9bbbf11eeddc87c7630e6dd2cac85f128916c546f58506c3a5ecf",
+      "digest": "0e258a6b473c6ad341ee8a17f736f8d80eddeb32a126dd2453534f8d6b29c9ba",
       "mode": 420,
-      "blob": "blobs/a36e4bc88bb9bbbf11eeddc87c7630e6dd2cac85f128916c546f58506c3a5ecf"
+      "blob": "blobs/0e258a6b473c6ad341ee8a17f736f8d80eddeb32a126dd2453534f8d6b29c9ba"
     },
     ".pi/skills/yss-prototype-stage/scripts/visual-baseline-contract.mjs": {
       "type": "file",
@@ -24222,9 +24222,9 @@
     },
     ".template-spec/plan/templates/plan-template.md": {
       "type": "file",
-      "digest": "5c9b66186da4020c5c5c9a21e695ded04090c2e226ca3213b094834759317bed",
+      "digest": "9adeaa2c4325ca5b161406984a8212a35e723f340753dbf8823de470c94340a4",
       "mode": 420,
-      "blob": "blobs/5c9b66186da4020c5c5c9a21e695ded04090c2e226ca3213b094834759317bed"
+      "blob": "blobs/9adeaa2c4325ca5b161406984a8212a35e723f340753dbf8823de470c94340a4"
     },
     ".template-spec/process/backend-delivery-defaults.md": {
       "type": "file",
@@ -44823,6 +44823,11 @@
       "digest": "b9ca61d8480050ae3ffd538cd1428471280d8c46a6d90c217ff211f78c66ec60",
       "mode": 420
     },
+    ".template-spec/plan/templates/plan-template.md": {
+      "type": "file",
+      "digest": "5c9b66186da4020c5c5c9a21e695ded04090c2e226ca3213b094834759317bed",
+      "mode": 420
+    },
     ".template-spec/process/contract-reading.md": {
       "type": "file",
       "digest": "a09d4929a2cf2e57651aa8076d8ebcfc12b0718c891e3a995ccd3d81027803c5",
@@ -45759,8 +45764,8 @@
       "mode": 420
     }
   },
-  "transitionBaselinesHash": "0eadeb424dfacc33d2a797c63f69e0e3541a7c78c0cf927afc6ef1ecd84d4561",
-  "snapshotHash": "67d1026f6c2b6bc9c9059369a8d62c3cbc4cf0c47812e2243599476c4ca92526",
+  "transitionBaselinesHash": "c48cc06148a67a4a63c8c752015b6faf64dd135ccdfe28d5f24827237740bd28",
+  "snapshotHash": "ff1f3c5a3741cbdd26b1b7e06bbe1517f4398e23aa05ceb9613ff5a02c18b1b2",
   "projectionRepresentation": "materialized-files",
   "pathEncoding": "sha256-blobs-v1"
 }
