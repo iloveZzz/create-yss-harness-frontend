@@ -6,8 +6,8 @@
   "metadataFile": ".yss-harness-frontend.json",
   "templateName": "yss-harness-frontend-agent",
   "templateSource": "github:iloveZzz/yss-harness-frontend-agent",
-  "templateCommit": "32dc41e48d4b76f9bb2e78d29b85ee70f964e50d",
-  "sourceState": "working-tree",
+  "templateCommit": "7abc433351c17ad5a1876d4c85683e545b70f4c4",
+  "sourceState": "committed",
   "manifestHash": "7aa5b118eb9ae4f4a154ca7a875a4e34939e40edf477487840f117f36607619d",
   "files": {
     ".agents/rules/yss-ai-skills.md": {
