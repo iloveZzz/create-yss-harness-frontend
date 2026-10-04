@@ -26,6 +26,8 @@ Slice v3 的当前执行结果须按 `references/yss-skill-execution-result.md` 
 
 ## 编译结果
 
+来源摘要、闭包、阅读视图和校验直接复用本 Profile 已安装的 `slice-contract` / `contract` 入口；工具或参数缺失按 消费项目 `.template-spec/process/script-execution.md` 诊断，不用临时校验替代当前合同门禁。
+
 新合同使用 Slice v3 唯一 YAML：basis、scope、resolution、acceptance、verification、work_units 与适用 extensions 单点保存；任务包由批准合同派生。v2 按原规则读取，修改时显式迁移新草案，不继承批准。
 
 编译器必须计算：
